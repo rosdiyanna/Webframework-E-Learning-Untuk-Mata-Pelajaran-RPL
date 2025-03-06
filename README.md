@@ -10,6 +10,12 @@ Tujuan: Menyiapkan konsep, teknologi, dan lingkungan pengembangan.
 2. Analisis kebutuhan sistem (fitur utama: beranda, daftar mata pelajaran, materi).
 3. Menentukan teknologi yang digunakan (CodeIgniter , Bootstrap, MySQL).
 
+MINGGU 2: PENGEMBANGAN BACKEND & DATABASE
+
+1. Mendapatkan Template
+2. Membuat rancangan UI/UX (wireframe untuk beranda, halaman mata pelajaran, materi).
+3. Setup CodeIgniter  
+
 # CodeIgniter 4 Application Starter
 
 ## What is CodeIgniter?
