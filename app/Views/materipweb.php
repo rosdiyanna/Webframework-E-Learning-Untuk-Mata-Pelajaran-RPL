@@ -1,91 +1,29 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 
-<head>
-    <meta charset="utf-8">
-    <title>SEO Master - SEO Agency Website Template</title>
-    <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <meta content="" name="keywords">
-    <meta content="" name="description">
-
-    <!-- Favicon -->
-    <link href="img/favicon.ico" rel="icon">
-
-    <!-- Google Web Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
-
-    <!-- Icon Font Stylesheet -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
-
-    <!-- Libraries Stylesheet -->
-    <link href="lib/animate/animate.min.css" rel="stylesheet">
-    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
-    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
-
-    <!-- Customized Bootstrap Stylesheet -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- Template Stylesheet -->
-    <link rel="stylesheet" href="<?= base_url('css/style.css') ?>">
-</head>
+<?= $this->include('/component/head') ?>
 
 <body>
     <div class="container-xxl bg-white p-0">
-        <!-- Spinner Start -->
-        <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
-            <div class="spinner-grow text-primary" style="width: 3rem; height: 3rem;" role="status">
-                <span class="sr-only">Loading...</span>
-            </div>
-        </div>
-        <!-- Spinner End -->
-
 
         <!-- Navbar & Hero Start -->
         <div class="container-xxl position-relative p-0">
             <nav class="navbar navbar-expand-lg navbar-light px-4 px-lg-5 py-3 py-lg-0">
-                <a href="" class="navbar-brand p-0">
+                <a href="#" class="navbar-brand p-0">
                     <h1 class="m-0"><i class="fa fa-search me-2"></i>CLASS<span class="fs-5">ify</span></h1>
-                    <!-- <img src="img/logo.png" alt="Logo"> -->
                 </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
-                    <span class="fa fa-bars"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarCollapse">
-                    <div class="navbar-nav ms-auto py-0">
-                        <div class="navbar-nav ms-auto py-0">
-                            <a href="<?= route_to('home') ?>" class="nav-item nav-link">Home</a>
-                            <a href="<?= route_to('about') ?>" class="nav-item nav-link ">About</a>
-                            <a href="<?= route_to('matapelajaran') ?>" class="nav-item nav-link ">Mata Pelajaran</a>
-                            <a href="<?= route_to('project') ?>" class="nav-item nav-link">Project</a>
-                            <div class="nav-item dropdown">
-                                <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
-                                <div class="dropdown-menu m-0">
-                                    <a href="<?= route_to('team') ?>" class="dropdown-item">Our Team</a>
-                                    <a href="<?= route_to('testimonial') ?>" class="dropdown-item">Testimonial</a>
-                                    <a href="<?= route_to('errors/html/error_404') ?>" class="dropdown-item active">404 Page</a>
-                                </div>
-                            </div>
-                            <a href="<?= route_to('contact') ?>" class="nav-item nav-link">Contact</a>
-                        </div>
-                        <butaton type="button" class="btn text-secondary ms-3" data-bs-toggle="modal" data-bs-target="#searchModal"><i class="fa fa-search"></i></butaton>
-                        <a href="https://htmlcodex.com/startup-company-website-template" class="btn btn-secondary text-light rounded-pill py-2 px-4 ms-3">Pro Version</a>
-                    </div>
             </nav>
-
             <div class="container-xxl py-5 bg-primary hero-header mb-5">
                 <div class="container my-5 py-5 px-lg-5">
                     <div class="row g-5 py-5">
                         <div class="col-12 text-center">
-                            <h1 class="text-white animated zoomIn">Not Found</h1>
+                            <h1 class="text-white animated zoomIn">Materi Pemrograman Web</h1>
                             <hr class="bg-white mx-auto mt-0" style="width: 90px;">
                             <nav aria-label="breadcrumb">
                                 <ol class="breadcrumb justify-content-center">
-                                    <li class="breadcrumb-item"><a class="text-white" href="#">Home</a></li>
-                                    <li class="breadcrumb-item"><a class="text-white" href="#">Pages</a></li>
-                                    <li class="breadcrumb-item text-white active" aria-current="page">404</li>
+                                    <li class="breadcrumb-item"><a class="text-white" href="<?= route_to('home') ?>">Home</a></li>
+                                    <li class="breadcrumb-item"><a class="text-white" href="<?= route_to('matapelajaran') ?>">Mapel</a></li>
+                                    <li class="breadcrumb-item text-white active" aria-current="page">Materi</li>
                                 </ol>
                             </nav>
                         </div>
@@ -95,41 +33,132 @@
         </div>
         <!-- Navbar & Hero End -->
 
+        <main class="container px-4 px-lg-5 py-5">
+            <section class="mb-5">
+                <h2 class="mb-3">Pengenalan Pemrograman Web</h2>
+                <p>Pemrograman web adalah proses pembuatan dan pengembangan aplikasi berbasis web yang dapat diakses melalui
+                    browser. Pemrograman web terdiri dari tiga komponen utama:</p>
+                <ul>
+                    <li><strong>Front-end</strong>: Bagian tampilan yang berinteraksi langsung dengan pengguna, menggunakan HTML, CSS, dan JavaScript.</li>
+                    <li><strong>Back-end</strong>: Bagian server yang menangani logika bisnis dan pengolahan data, menggunakan bahasa seperti PHP, Python, atau Node.js.</li>
+                    <li><strong>Database</strong>: Tempat penyimpanan data yang digunakan dalam aplikasi web, seperti MySQL atau MongoDB.</li>
+                </ul>
+            </section>
 
-        <!-- Full Screen Search Start -->
-        <div class="modal fade" id="searchModal" tabindex="-1">
-            <div class="modal-dialog modal-fullscreen">
-                <div class="modal-content" style="background: rgba(29, 29, 39, 0.7);">
-                    <div class="modal-header border-0">
-                        <button type="button" class="btn bg-white btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body d-flex align-items-center justify-content-center">
-                        <div class="input-group" style="max-width: 600px;">
-                            <input type="text" class="form-control bg-transparent border-light p-3" placeholder="Type search keyword">
-                            <button class="btn btn-light px-4"><i class="bi bi-search"></i></button>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            <section class="mb-5">
+                <h2 class="mb-3">HTML (HyperText Markup Language)</h2>
+                <p>HTML adalah bahasa markup yang digunakan untuk membuat struktur halaman web. Dengan HTML, kita bisa menambahkan
+                    teks, gambar, video, dan elemen lain pada halaman web.</p>
+
+                <h3 class="mt-4">Contoh Struktur HTML</h3>
+                <pre class="bg-light p-3"><code>
+&lt;!DOCTYPE html&gt;
+&lt;html lang="id"&gt;
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+    &lt;title>Halaman Web Saya&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;h1>Selamat Datang di Website Saya&lt;/h1&gt;
+    &lt;p>Ini adalah contoh halaman web menggunakan HTML.&lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+        </code></pre>
+            </section>
+
+            <section class="mb-5">
+                <h2 class="mb-3">CSS (Cascading Style Sheets)</h2>
+                <p>CSS digunakan untuk mengatur tampilan dan desain halaman web agar lebih menarik dan responsif.</p>
+
+                <h3 class="mt-4">Contoh CSS</h3>
+                <pre class="bg-light p-3"><code>
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+h1 {
+    color: blue;
+    text-align: center;
+}
+        </code></pre>
+            </section>
+
+            <section class="mb-5">
+                <h2 class="mb-3">JavaScript</h2>
+                <p>JavaScript adalah bahasa pemrograman yang digunakan untuk membuat halaman web lebih interaktif.</p>
+
+                <h3 class="mt-4">Contoh JavaScript</h3>
+                <pre class="bg-light p-3"><code>
+document.addEventListener("DOMContentLoaded", function() {
+    document.querySelector("h1").addEventListener("click", function() {
+        alert("Anda mengklik judul!");
+    });
+});
+        </code></pre>
+            </section>
+
+            <section class="mb-5">
+                <h2 class="mb-3">Framework Front-end (React.js, Vue.js)</h2>
+                <p>Framework front-end membantu pengembang dalam membangun antarmuka pengguna dengan lebih cepat dan efisien.</p>
+
+                <h3 class="mt-4">Contoh React.js</h3>
+                <pre class="bg-light p-3"><code>
+import React from 'react';
+
+function App() {
+    return (
+        <div>
+            <h1>Hello, World!</h1>
         </div>
-        <!-- Full Screen Search End -->
+    );
+}
 
+export default App;
+        </code></pre>
 
-        <!-- 404 Start -->
-        <div class="container-xxl py-5 wow fadeInUp" data-wow-delay="0.1s">
-            <div class="container px-lg-5 text-center">
-                <div class="row justify-content-center">
-                    <div class="col-lg-6">
-                        <i class="bi bi-exclamation-triangle display-1 text-primary"></i>
-                        <h1 class="display-1">404</h1>
-                        <h1 class="mb-4">Page Not Found</h1>
-                        <p class="mb-4">We’re sorry, the page you have looked for does not exist in our website! Maybe go to our home page or try to use a search?</p>
-                        <a class="btn btn-primary rounded-pill py-3 px-5" href="">Go Back To Home</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- 404 End -->
+                <h3 class="mt-4">Contoh Vue.js</h3>
+                <pre class="bg-light p-3"><code>
+&lt;template&gt;
+  &lt;div&gt;
+    &lt;h1&gt;{{ message }}&lt;/h1&gt;
+  &lt;/div&gt;
+&lt;/template&gt;
+
+&lt;script&gt;
+export default {
+  data() {
+    return {
+      message: "Halo dari Vue.js"
+    };
+  }
+};
+&lt;/script&gt;
+        </code></pre>
+            </section>
+
+            <section class="mb-5">
+                <h2 class="mb-3">Framework Back-end (Laravel)</h2>
+                <p>Laravel adalah framework PHP yang digunakan untuk membangun aplikasi web dengan cepat dan aman.</p>
+
+                <h3 class="mt-4">Contoh Routing dalam Laravel</h3>
+                <pre class="bg-light p-3"><code>
+// routes/web.php
+Route::get('/halo', function () {
+    return "Halo, ini Laravel!";
+});
+        </code></pre>
+            </section>
+
+            <section class="mb-5">
+                <h2 class="mb-3">Kesimpulan</h2>
+                <p>Pemrograman web mencakup banyak teknologi yang dapat digunakan untuk membangun aplikasi web. Dengan memahami
+                    HTML, CSS, dan JavaScript, serta memanfaatkan framework seperti Laravel, React.js, dan Vue.js, pengembang
+                    dapat menciptakan aplikasi web yang modern, responsif, dan efisien.</p>
+            </section>
+        </main>
 
 
         <!-- Footer Start -->
@@ -219,8 +248,8 @@
     </div>
 
     <!-- JavaScript Libraries -->
-    <script src="<?= base_url('lib/jquery/jquery-3.4.1.min.js') ?>"></script>
-    <script src="<?= base_url('lib/bootstrap/js/bootstrap.bundle.min.js') ?>"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
     <script src="<?= base_url('lib/wow/wow.min.js') ?>"></script>
     <script src="<?= base_url('lib/easing/easing.min.js') ?>"></script>
     <script src="<?= base_url('lib/waypoints/waypoints.min.js') ?>"></script>

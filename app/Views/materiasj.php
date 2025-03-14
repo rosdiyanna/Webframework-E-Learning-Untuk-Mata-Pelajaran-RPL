@@ -1,61 +1,29 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 
 <?= $this->include('/component/head') ?>
 
 <body>
     <div class="container-xxl bg-white p-0">
-        <!-- Spinner Start -->
-        <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
-            <div class="spinner-grow text-primary" style="width: 3rem; height: 3rem;" role="status">
-                <span class="sr-only">Loading...</span>
-            </div>
-        </div>
-        <!-- Spinner End -->
-
 
         <!-- Navbar & Hero Start -->
         <div class="container-xxl position-relative p-0">
             <nav class="navbar navbar-expand-lg navbar-light px-4 px-lg-5 py-3 py-lg-0">
-                <a href="" class="navbar-brand p-0">
+                <a href="#" class="navbar-brand p-0">
                     <h1 class="m-0"><i class="fa fa-search me-2"></i>CLASS<span class="fs-5">ify</span></h1>
-                    <!-- <img src="img/logo.png" alt="Logo"> -->
                 </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
-                    <span class="fa fa-bars"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarCollapse">
-                    <div class="navbar-nav ms-auto py-0">
-                        <a href="<?= route_to('home') ?>" class="nav-item nav-link">Home</a>
-                        <a href="<?= route_to('about') ?>" class="nav-item nav-link ">About</a>
-                        <a href="<?= route_to('matapelajaran') ?>" class="nav-item nav-link ">Mata Pelajaran</a>
-                        <a href="<?= route_to('project') ?>" class="nav-item nav-link">Project</a>
-                        <div class="nav-item dropdown">
-                            <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
-                            <div class="dropdown-menu m-0">
-                                <a href="<?= route_to('team') ?>" class="dropdown-item">Our Team</a>
-                                <a href="<?= route_to('testimonial') ?>" class="dropdown-item">Testimonial</a>
-                                <a href="404.html" class="dropdown-item">404 Page</a>
-                            </div>
-                        </div>
-                        <a href="<?= route_to('contact') ?>" class="nav-item nav-link active">Contact</a>
-                    </div>
-                    <butaton type="button" class="btn text-secondary ms-3" data-bs-toggle="modal" data-bs-target="#searchModal"><i class="fa fa-search"></i></butaton>
-                    <a href="https://htmlcodex.com/startup-company-website-template" class="btn btn-secondary text-light rounded-pill py-2 px-4 ms-3">Pro Version</a>
-                </div>
             </nav>
-
             <div class="container-xxl py-5 bg-primary hero-header mb-5">
                 <div class="container my-5 py-5 px-lg-5">
                     <div class="row g-5 py-5">
                         <div class="col-12 text-center">
-                            <h1 class="text-white animated zoomIn">Contact Us</h1>
+                            <h1 class="text-white animated zoomIn">Materi Administrasi Sistem Jaringan</h1>
                             <hr class="bg-white mx-auto mt-0" style="width: 90px;">
                             <nav aria-label="breadcrumb">
                                 <ol class="breadcrumb justify-content-center">
-                                    <li class="breadcrumb-item"><a class="text-white" href="#">Home</a></li>
-                                    <li class="breadcrumb-item"><a class="text-white" href="#">Pages</a></li>
-                                    <li class="breadcrumb-item text-white active" aria-current="page">Contact</li>
+                                    <li class="breadcrumb-item"><a class="text-white" href="<?= route_to('home') ?>">Home</a></li>
+                                    <li class="breadcrumb-item"><a class="text-white" href="<?= route_to('matapelajaran') ?>">Mapel</a></li>
+                                    <li class="breadcrumb-item text-white active" aria-current="page">Materi</li>
                                 </ol>
                             </nav>
                         </div>
@@ -65,74 +33,150 @@
         </div>
         <!-- Navbar & Hero End -->
 
+        <main class="container px-4 px-lg-5 py-5">
+            <section class="mb-5">
+                <h2 class="mb-3">Pengelolaan Sistem Operasi Server</h2>
+                <p>Pada administrasi sistem jaringan, pengelolaan sistem operasi server menjadi aspek penting dalam mendukung
+                    layanan jaringan. Sistem operasi server yang umum digunakan adalah Linux dan Windows Server.</p>
 
-        <!-- Full Screen Search Start -->
-        <div class="modal fade" id="searchModal" tabindex="-1">
-            <div class="modal-dialog modal-fullscreen">
-                <div class="modal-content" style="background: rgba(29, 29, 39, 0.7);">
-                    <div class="modal-header border-0">
-                        <button type="button" class="btn bg-white btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body d-flex align-items-center justify-content-center">
-                        <div class="input-group" style="max-width: 600px;">
-                            <input type="text" class="form-control bg-transparent border-light p-3" placeholder="Type search keyword">
-                            <button class="btn btn-light px-4"><i class="bi bi-search"></i></button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Full Screen Search End -->
+                <h3 class="mt-4">1. Linux Server</h3>
+                <p>Linux Server digunakan secara luas karena stabilitas dan keamanannya. Beberapa distribusi Linux yang populer untuk server:</p>
+                <ul>
+                    <li><strong>Ubuntu Server</strong> – Cocok untuk pemula, banyak digunakan dalam lingkungan cloud.</li>
+                    <li><strong>CentOS/Rocky Linux</strong> – Stabil dan banyak digunakan dalam perusahaan.</li>
+                    <li><strong>Debian</strong> – Ringan dan efisien untuk server.</li>
+                </ul>
 
+                <h4>Perintah Dasar Linux Server:</h4>
+                <pre class="bg-light p-3"><code>
+# Update sistem
+sudo apt update && sudo apt upgrade -y
 
-        <!-- Contact Start -->
-        <div class="container-xxl py-5">
-            <div class="container px-lg-5">
-                <div class="row justify-content-center">
-                    <div class="col-lg-7">
-                        <div class="section-title position-relative text-center mb-5 pb-2 wow fadeInUp" data-wow-delay="0.1s">
-                            <h6 class="position-relative d-inline text-primary ps-4">Contact Us</h6>
-                            <h2 class="mt-2">Contact For Any Query</h2>
-                        </div>
-                        <div class="wow fadeInUp" data-wow-delay="0.3s">
-                            <form>
-                                <div class="row g-3">
-                                    <div class="col-md-6">
-                                        <div class="form-floating">
-                                            <input type="text" class="form-control" id="name" placeholder="Your Name">
-                                            <label for="name">Your Name</label>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-6">
-                                        <div class="form-floating">
-                                            <input type="email" class="form-control" id="email" placeholder="Your Email">
-                                            <label for="email">Your Email</label>
-                                        </div>
-                                    </div>
-                                    <div class="col-12">
-                                        <div class="form-floating">
-                                            <input type="text" class="form-control" id="subject" placeholder="Subject">
-                                            <label for="subject">Subject</label>
-                                        </div>
-                                    </div>
-                                    <div class="col-12">
-                                        <div class="form-floating">
-                                            <textarea class="form-control" placeholder="Leave a message here" id="message" style="height: 150px"></textarea>
-                                            <label for="message">Message</label>
-                                        </div>
-                                    </div>
-                                    <div class="col-12">
-                                        <button class="btn btn-primary w-100 py-3" type="submit">Send Message</button>
-                                    </div>
-                                </div>
-                            </form>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Contact End -->
+# Cek status layanan
+systemctl status apache2
 
+# Menambah user baru
+sudo adduser nama_user
+        </code></pre>
+
+                <h3 class="mt-4">2. Windows Server</h3>
+                <p>Windows Server digunakan dalam berbagai organisasi yang mengandalkan teknologi Microsoft, seperti Active Directory dan layanan berbasis GUI.</p>
+                <ul>
+                    <li><strong>Windows Server 2019/2022</strong> – Mendukung virtualisasi, Active Directory, dan berbagai layanan jaringan.</li>
+                    <li><strong>Active Directory</strong> – Digunakan untuk mengelola user dan komputer dalam jaringan.</li>
+                    <li><strong>PowerShell</strong> – Digunakan untuk administrasi berbasis perintah.</li>
+                </ul>
+
+                <h4>Contoh Perintah PowerShell:</h4>
+                <pre class="bg-light p-3"><code>
+# Melihat daftar pengguna
+Get-ADUser -Filter *
+
+# Membuat pengguna baru
+New-ADUser -Name "UserBaru" -SamAccountName UserBaru -UserPrincipalName UserBaru@domain.local
+        </code></pre>
+            </section>
+
+            <section class="mb-5">
+                <h2 class="mb-3">Jaringan Komputer Dasar</h2>
+                <p>Jaringan komputer adalah sistem yang menghubungkan berbagai perangkat untuk berbagi data dan sumber daya.</p>
+
+                <h3 class="mt-4">1. Topologi Jaringan</h3>
+                <p>Beberapa jenis topologi jaringan yang umum digunakan:</p>
+                <ul>
+                    <li><strong>Topologi Bus</strong> – Menggunakan satu jalur utama untuk komunikasi.</li>
+                    <li><strong>Topologi Star</strong> – Setiap perangkat terhubung ke satu titik pusat.</li>
+                    <li><strong>Topologi Mesh</strong> – Semua perangkat terhubung satu sama lain.</li>
+                </ul>
+
+                <h3 class="mt-4">2. Perangkat Jaringan</h3>
+                <p>Dalam sebuah jaringan, terdapat beberapa perangkat utama:</p>
+                <ul>
+                    <li><strong>Router</strong> – Menghubungkan berbagai jaringan dan meneruskan paket data.</li>
+                    <li><strong>Switch</strong> – Menghubungkan beberapa perangkat dalam satu jaringan lokal (LAN).</li>
+                    <li><strong>Firewall</strong> – Menyaring lalu lintas data dan meningkatkan keamanan jaringan.</li>
+                </ul>
+
+                <h3 class="mt-4">3. Konfigurasi Jaringan Dasar</h3>
+                <p>Berikut adalah contoh konfigurasi IP statis di Linux dan Windows:</p>
+
+                <h4>Konfigurasi IP Statis di Linux</h4>
+                <pre class="bg-light p-3"><code>
+# Edit file konfigurasi jaringan
+sudo nano /etc/netplan/01-netcfg.yaml
+
+# Contoh pengaturan IP statis
+network:
+  ethernets:
+    eth0:
+      addresses:
+        - 192.168.1.100/24
+      gateway4: 192.168.1.1
+      nameservers:
+        addresses:
+          - 8.8.8.8
+          - 8.8.4.4
+  version: 2
+
+# Terapkan perubahan
+sudo netplan apply
+        </code></pre>
+
+                <h4>Konfigurasi IP Statis di Windows</h4>
+                <pre class="bg-light p-3"><code>
+# Mengatur IP statis menggunakan PowerShell
+New-NetIPAddress -InterfaceAlias "Ethernet" -IPAddress 192.168.1.100 -PrefixLength 24 -DefaultGateway 192.168.1.1
+        </code></pre>
+            </section>
+
+            <section class="mb-5">
+                <h2 class="mb-3">Keamanan Sistem</h2>
+                <p>Keamanan sistem sangat penting dalam administrasi jaringan untuk melindungi data dan infrastruktur dari ancaman siber.</p>
+
+                <h3 class="mt-4">1. Firewall</h3>
+                <p>Firewall berfungsi sebagai penghalang antara jaringan internal dan eksternal.</p>
+
+                <h4>Konfigurasi Firewall di Linux</h4>
+                <pre class="bg-light p-3"><code>
+# Cek status firewall
+sudo ufw status
+
+# Mengaktifkan firewall
+sudo ufw enable
+
+# Membuka port 22 (SSH)
+sudo ufw allow 22/tcp
+
+# Menolak semua koneksi masuk
+sudo ufw default deny incoming
+        </code></pre>
+
+                <h3 class="mt-4">2. Enkripsi dan Autentikasi</h3>
+                <p>Untuk mengamankan komunikasi, enkripsi dan autentikasi sangat diperlukan:</p>
+                <ul>
+                    <li><strong>SSL/TLS</strong> – Digunakan untuk mengamankan komunikasi web.</li>
+                    <li><strong>VPN (Virtual Private Network)</strong> – Digunakan untuk komunikasi aman dalam jaringan.</li>
+                </ul>
+
+                <h3 class="mt-4">3. Manajemen Pengguna dan Hak Akses</h3>
+                <p>Mengelola pengguna dengan hak akses yang tepat sangat penting dalam menjaga keamanan sistem.</p>
+
+                <h4>Menambah Pengguna dengan Hak Akses di Linux</h4>
+                <pre class="bg-light p-3"><code>
+# Menambah user baru
+sudo adduser nama_user
+
+# Menambahkan user ke grup sudo
+sudo usermod -aG sudo nama_user
+        </code></pre>
+
+                <h4>Menambah Pengguna dengan Hak Akses di Windows</h4>
+                <pre class="bg-light p-3"><code>
+# Menambahkan user ke grup Administrator di PowerShell
+Add-LocalGroupMember -Group "Administrators" -Member "UserBaru"
+        </code></pre>
+            </section>
+        </main>
 
         <!-- Footer Start -->
         <div class="container-fluid bg-primary text-light footer mt-5 pt-5 wow fadeIn" data-wow-delay="0.1s">

@@ -1,36 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-    <meta charset="utf-8">
-    <title>SEO Master - SEO Agency Website Template</title>
-    <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <meta content="" name="keywords">
-    <meta content="" name="description">
-
-    <!-- Favicon -->
-    <link href="img/favicon.ico" rel="icon">
-
-    <!-- Google Web Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet"> 
-
-    <!-- Icon Font Stylesheet -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
-
-    <!-- Libraries Stylesheet -->
-    <link href="lib/animate/animate.min.css" rel="stylesheet">
-    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
-    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
-
-    <!-- Customized Bootstrap Stylesheet -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- Template Stylesheet -->
-    <link rel="stylesheet" href="<?= base_url('css/style.css') ?>">
-</head>
+<?= $this->include('/component/head') ?>
 
 <body>
     <div class="container-xxl bg-white p-0">
@@ -47,7 +18,7 @@
         <div class="container-xxl position-relative p-0">
             <nav class="navbar navbar-expand-lg navbar-light px-4 px-lg-5 py-3 py-lg-0">
                 <a href="" class="navbar-brand p-0">
-                    <h1 class="m-0"><i class="fa fa-search me-2"></i>SEO<span class="fs-5">Master</span></h1>
+                    <h1 class="m-0"><i class="fa fa-search me-2"></i>CLASS<span class="fs-5">ify</span></h1>
                     <!-- <img src="img/logo.png" alt="Logo"> -->
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
@@ -55,19 +26,19 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarCollapse">
                     <div class="navbar-nav ms-auto py-0">
-                        <a href="index.html" class="nav-item nav-link">Home</a>
-                        <a href="about.html" class="nav-item nav-link">About</a>
-                        <a href="service.html" class="nav-item nav-link active">Service</a>
-                        <a href="project.html" class="nav-item nav-link">Project</a>
+                        <a href="<?= route_to('home') ?>" class="nav-item nav-link">Home</a>
+                        <a href="<?= route_to('about') ?>" class="nav-item nav-link">About</a>
+                        <a href="<?= route_to('matapelajaran') ?>" class="nav-item nav-link active">Mata Pelajaran</a>
+                        <a href="<?= route_to('project') ?>" class="nav-item nav-link">Project</a>
                         <div class="nav-item dropdown">
                             <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
                             <div class="dropdown-menu m-0">
-                                <a href="team.html" class="dropdown-item">Our Team</a>
-                                <a href="testimonial.html" class="dropdown-item">Testimonial</a>
+                                <a href="<?= route_to('team') ?>" class="dropdown-item">Our Team</a>
+                                <a href="<?= route_to('testimonial') ?>" class="dropdown-item">Testimonial</a>
                                 <a href="404.html" class="dropdown-item">404 Page</a>
                             </div>
                         </div>
-                        <a href="contact.html" class="nav-item nav-link">Contact</a>
+                        <a href="<?= route_to('contact') ?>" class="nav-item nav-link">Contact</a>
                     </div>
                     <butaton type="button" class="btn text-secondary ms-3" data-bs-toggle="modal" data-bs-target="#searchModal"><i class="fa fa-search"></i></butaton>
                     <a href="https://htmlcodex.com/startup-company-website-template" class="btn btn-secondary text-light rounded-pill py-2 px-4 ms-3">Pro Version</a>
@@ -78,13 +49,13 @@
                 <div class="container my-5 py-5 px-lg-5">
                     <div class="row g-5 py-5">
                         <div class="col-12 text-center">
-                            <h1 class="text-white animated zoomIn">Service</h1>
+                            <h1 class="text-white animated zoomIn">Mata Pelajaran</h1>
                             <hr class="bg-white mx-auto mt-0" style="width: 90px;">
                             <nav aria-label="breadcrumb">
                                 <ol class="breadcrumb justify-content-center">
                                     <li class="breadcrumb-item"><a class="text-white" href="#">Home</a></li>
                                     <li class="breadcrumb-item"><a class="text-white" href="#">Pages</a></li>
-                                    <li class="breadcrumb-item text-white active" aria-current="page">Service</li>
+                                    <li class="breadcrumb-item text-white active" aria-current="page">Materi</li>
                                 </ol>
                             </nav>
                         </div>
@@ -114,79 +85,80 @@
         <!-- Full Screen Search End -->
 
 
-        <!-- Service Start -->
+        <!-- Mata Pelajaran Start -->
         <div class="container-xxl py-5">
             <div class="container px-lg-5">
                 <div class="section-title position-relative text-center mb-5 pb-2 wow fadeInUp" data-wow-delay="0.1s">
-                    <h6 class="position-relative d-inline text-primary ps-4">Our Services</h6>
+                    <h6 class="position-relative d-inline text-primary ps-4">Our Mata Pelajaran</h6>
                     <h2 class="mt-2">What Solutions We Provide</h2>
                 </div>
                 <div class="row g-4">
                     <div class="col-lg-4 col-md-6 wow zoomIn" data-wow-delay="0.1s">
                         <div class="service-item d-flex flex-column justify-content-center text-center rounded">
                             <div class="service-icon flex-shrink-0">
-                                <i class="fa fa-home fa-2x"></i>
+                                <i class="fa fa-code fa-2x"></i>
                             </div>
-                            <h5 class="mb-3">SEO Optimization</h5>
-                            <p>Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet diam sed stet lorem.</p>
-                            <a class="btn px-3 mt-auto mx-auto" href="">Read More</a>
+                            <h5 class="mb-3">Pemrograman Dasar</h5>
+                            <p>Konsep dasar pemrograman, algoritma, logika pemrograman, dan implementasi dengan bahasa pemrograman seperti Python, C++, atau Java.</p>
+                            <a class="btn px-3 mt-auto mx-auto" href="materipemrogramandasar">Read More</a>
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-6 wow zoomIn" data-wow-delay="0.3s">
                         <div class="service-item d-flex flex-column justify-content-center text-center rounded">
                             <div class="service-icon flex-shrink-0">
-                                <i class="fa fa-home fa-2x"></i>
+                                <i class="fa fa-database fa-2x"></i>
                             </div>
-                            <h5 class="mb-3">Web Design</h5>
-                            <p>Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet diam sed stet lorem.</p>
-                            <a class="btn px-3 mt-auto mx-auto" href="">Read More</a>
+                            <h5 class="mb-3">Basis Data</h5>
+                            <p>Konsep database, perancangan database, SQL, dan implementasi menggunakan MySQL, PostgreSQL, atau lainnya.</p>
+                            <a class="btn px-3 mt-auto mx-auto" href="materibasisdata">Read More</a>
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-6 wow zoomIn" data-wow-delay="0.6s">
                         <div class="service-item d-flex flex-column justify-content-center text-center rounded">
                             <div class="service-icon flex-shrink-0">
-                                <i class="fa fa-home fa-2x"></i>
+                                <i class="fa fa-object-group fa-2x"></i>
                             </div>
-                            <h5 class="mb-3">Social Media Marketing</h5>
-                            <p>Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet diam sed stet lorem.</p>
-                            <a class="btn px-3 mt-auto mx-auto" href="">Read More</a>
+                            <h5 class="mb-3">Pemrograman Berorientasi Objek (PBO)</h5>
+                            <p>Konsep OOP, kelas, objek, inheritance, polymorphism, dan implementasinya dalam Java/Python/C#.</p>
+                            <a class="btn px-3 mt-auto mx-auto" href="materipbo">Read More</a>
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-6 wow zoomIn" data-wow-delay="0.1s">
                         <div class="service-item d-flex flex-column justify-content-center text-center rounded">
                             <div class="service-icon flex-shrink-0">
-                                <i class="fa fa-home fa-2x"></i>
+                                <i class="fa fa-globe fa-2x"></i>
                             </div>
-                            <h5 class="mb-3">Email Marketing</h5>
-                            <p>Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet diam sed stet lorem.</p>
-                            <a class="btn px-3 mt-auto mx-auto" href="">Read More</a>
+                            <h5 class="mb-3">Pemrograman Web</h5>
+                            <p>HTML, CSS, JavaScript, framework seperti Laravel, React.js, atau Vue.js.</p>
+                            <a class="btn px-3 mt-auto mx-auto" href="materipweb">Read More</a>
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-6 wow zoomIn" data-wow-delay="0.3s">
                         <div class="service-item d-flex flex-column justify-content-center text-center rounded">
                             <div class="service-icon flex-shrink-0">
-                                <i class="fa fa-home fa-2x"></i>
+                                <i class="fa fa-cogs fa-2x"></i>
                             </div>
-                            <h5 class="mb-3">PPC Advertising</h5>
-                            <p>Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet diam sed stet lorem.</p>
-                            <a class="btn px-3 mt-auto mx-auto" href="">Read More</a>
+                            <h5 class="mb-3">Pengembangan Perangkat Lunak</h5>
+                            <p>Siklus hidup pengembangan perangkat lunak (SDLC), metodologi Agile, Scrum, dan manajemen proyek perangkat lunak.</p>
+                            <a class="btn px-3 mt-auto mx-auto" href="materippl">Read More</a>
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-6 wow zoomIn" data-wow-delay="0.6s">
                         <div class="service-item d-flex flex-column justify-content-center text-center rounded">
                             <div class="service-icon flex-shrink-0">
-                                <i class="fa fa-home fa-2x"></i>
+                                <i class="fa fa-server fa-2x"></i>
                             </div>
-                            <h5 class="mb-3">App Development</h5>
-                            <p>Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet diam sed stet lorem.</p>
-                            <a class="btn px-3 mt-auto mx-auto" href="">Read More</a>
+                            <h5 class="mb-3">Administrasi Sistem Jaringan</h5>
+                            <p>Pengelolaan sistem operasi server (Linux/Windows Server), jaringan komputer dasar, dan keamanan sistem.</p>
+                            <a class="btn px-3 mt-auto mx-auto" href="materiasj">Read More</a>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <!-- Service End -->
-        
+        <!-- Mata Pelajaran End -->
+
+
 
         <!-- Footer Start -->
         <div class="container-fluid bg-primary text-light footer mt-5 pt-5 wow fadeIn" data-wow-delay="0.1s">
@@ -194,9 +166,9 @@
                 <div class="row g-5">
                     <div class="col-md-6 col-lg-3">
                         <h5 class="text-white mb-4">Get In Touch</h5>
-                        <p><i class="fa fa-map-marker-alt me-3"></i>123 Street, New York, USA</p>
-                        <p><i class="fa fa-phone-alt me-3"></i>+012 345 67890</p>
-                        <p><i class="fa fa-envelope me-3"></i>info@example.com</p>
+                        <p><i class="fa fa-map-marker-alt me-3"></i>Bandar Lampung,Indonesia</p>
+                        <p><i class="fa fa-phone-alt me-3"></i>+62 852 6640 7728</p>
+                        <p><i class="fa fa-envelope me-3"></i>rosdiyannasafitri@gmail.com</p>
                         <div class="d-flex pt-2">
                             <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-twitter"></i></a>
                             <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-facebook-f"></i></a>
@@ -250,10 +222,10 @@
                 <div class="copyright">
                     <div class="row">
                         <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
-                            &copy; <a class="border-bottom" href="#">Your Site Name</a>, All Right Reserved. 
-							
-							<!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
-							Designed By <a class="border-bottom" href="https://htmlcodex.com">HTML Codex</a>
+                            &copy; <a class="border-bottom" href="#">Your Site Name</a>, All Right Reserved.
+
+                            <!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
+                            Designed By <a class="border-bottom" href="https://htmlcodex.com">HTML Codex</a>
                         </div>
                         <div class="col-md-6 text-center text-md-end">
                             <div class="footer-menu">
@@ -275,17 +247,17 @@
     </div>
 
     <!-- JavaScript Libraries -->
-<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
-<script src="<?= base_url('lib/wow/wow.min.js') ?>"></script>
-<script src="<?= base_url('lib/easing/easing.min.js') ?>"></script>
-<script src="<?= base_url('lib/waypoints/waypoints.min.js') ?>"></script>
-<script src="<?= base_url('lib/owlcarousel/owl.carousel.min.js') ?>"></script>
-<script src="<?= base_url('lib/isotope/isotope.pkgd.min.js') ?>"></script>
-<script src="<?= base_url('lib/lightbox/js/lightbox.min.js') ?>"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="<?= base_url('lib/wow/wow.min.js') ?>"></script>
+    <script src="<?= base_url('lib/easing/easing.min.js') ?>"></script>
+    <script src="<?= base_url('lib/waypoints/waypoints.min.js') ?>"></script>
+    <script src="<?= base_url('lib/owlcarousel/owl.carousel.min.js') ?>"></script>
+    <script src="<?= base_url('lib/isotope/isotope.pkgd.min.js') ?>"></script>
+    <script src="<?= base_url('lib/lightbox/js/lightbox.min.js') ?>"></script>
 
-<!-- Template Javascript -->
-<script src="<?= base_url('js/main.js') ?>"></script>
+    <!-- Template Javascript -->
+    <script src="<?= base_url('js/main.js') ?>"></script>
 </body>
 
 </html>

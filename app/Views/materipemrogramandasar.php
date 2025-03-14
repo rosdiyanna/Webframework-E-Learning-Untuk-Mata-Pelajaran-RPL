@@ -1,91 +1,29 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 
-<head>
-    <meta charset="utf-8">
-    <title>SEO Master - SEO Agency Website Template</title>
-    <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <meta content="" name="keywords">
-    <meta content="" name="description">
-
-    <!-- Favicon -->
-    <link href="img/favicon.ico" rel="icon">
-
-    <!-- Google Web Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
-
-    <!-- Icon Font Stylesheet -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
-
-    <!-- Libraries Stylesheet -->
-    <link href="lib/animate/animate.min.css" rel="stylesheet">
-    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
-    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
-
-    <!-- Customized Bootstrap Stylesheet -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- Template Stylesheet -->
-    <link rel="stylesheet" href="<?= base_url('css/style.css') ?>">
-</head>
+<?= $this->include('/component/head') ?>
 
 <body>
     <div class="container-xxl bg-white p-0">
-        <!-- Spinner Start -->
-        <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
-            <div class="spinner-grow text-primary" style="width: 3rem; height: 3rem;" role="status">
-                <span class="sr-only">Loading...</span>
-            </div>
-        </div>
-        <!-- Spinner End -->
-
 
         <!-- Navbar & Hero Start -->
         <div class="container-xxl position-relative p-0">
             <nav class="navbar navbar-expand-lg navbar-light px-4 px-lg-5 py-3 py-lg-0">
-                <a href="" class="navbar-brand p-0">
+                <a href="#" class="navbar-brand p-0">
                     <h1 class="m-0"><i class="fa fa-search me-2"></i>CLASS<span class="fs-5">ify</span></h1>
-                    <!-- <img src="img/logo.png" alt="Logo"> -->
                 </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
-                    <span class="fa fa-bars"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarCollapse">
-                    <div class="navbar-nav ms-auto py-0">
-                        <div class="navbar-nav ms-auto py-0">
-                            <a href="<?= route_to('home') ?>" class="nav-item nav-link">Home</a>
-                            <a href="<?= route_to('about') ?>" class="nav-item nav-link ">About</a>
-                            <a href="<?= route_to('matapelajaran') ?>" class="nav-item nav-link ">Mata Pelajaran</a>
-                            <a href="<?= route_to('project') ?>" class="nav-item nav-link">Project</a>
-                            <div class="nav-item dropdown">
-                                <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
-                                <div class="dropdown-menu m-0">
-                                    <a href="<?= route_to('team') ?>" class="dropdown-item">Our Team</a>
-                                    <a href="<?= route_to('testimonial') ?>" class="dropdown-item">Testimonial</a>
-                                    <a href="<?= route_to('errors/html/error_404') ?>" class="dropdown-item active">404 Page</a>
-                                </div>
-                            </div>
-                            <a href="<?= route_to('contact') ?>" class="nav-item nav-link">Contact</a>
-                        </div>
-                        <butaton type="button" class="btn text-secondary ms-3" data-bs-toggle="modal" data-bs-target="#searchModal"><i class="fa fa-search"></i></butaton>
-                        <a href="https://htmlcodex.com/startup-company-website-template" class="btn btn-secondary text-light rounded-pill py-2 px-4 ms-3">Pro Version</a>
-                    </div>
             </nav>
-
             <div class="container-xxl py-5 bg-primary hero-header mb-5">
                 <div class="container my-5 py-5 px-lg-5">
                     <div class="row g-5 py-5">
                         <div class="col-12 text-center">
-                            <h1 class="text-white animated zoomIn">Not Found</h1>
+                            <h1 class="text-white animated zoomIn">Materi Pemrograman Dasar</h1>
                             <hr class="bg-white mx-auto mt-0" style="width: 90px;">
                             <nav aria-label="breadcrumb">
                                 <ol class="breadcrumb justify-content-center">
-                                    <li class="breadcrumb-item"><a class="text-white" href="#">Home</a></li>
-                                    <li class="breadcrumb-item"><a class="text-white" href="#">Pages</a></li>
-                                    <li class="breadcrumb-item text-white active" aria-current="page">404</li>
+                                    <li class="breadcrumb-item"><a class="text-white" href="<?= route_to('home') ?>">Home</a></li>
+                                    <li class="breadcrumb-item"><a class="text-white" href="<?= route_to('matapelajaran') ?>">Mapel</a></li>
+                                    <li class="breadcrumb-item text-white active" aria-current="page">Materi</li>
                                 </ol>
                             </nav>
                         </div>
@@ -95,42 +33,63 @@
         </div>
         <!-- Navbar & Hero End -->
 
+        <main class="container px-4 px-lg-5 py-5">
+            <section class="mb-5">
+                <h2 class="mb-3">Pengenalan Pemrograman</h2>
+                <p>Pemrograman adalah proses menulis, menguji, dan memelihara kode agar komputer dapat menjalankan tugas tertentu.
+                    Dalam dunia teknologi, pemrograman digunakan untuk membuat perangkat lunak, aplikasi, dan sistem yang membantu
+                    manusia dalam berbagai aspek kehidupan.</p>
+                <ul>
+                    <li>Memahami konsep dasar pemrograman</li>
+                    <li>Mengetahui perbedaan antara berbagai bahasa pemrograman</li>
+                    <li>Mengerti pentingnya pemrograman dalam dunia digital</li>
+                </ul>
+            </section>
 
-        <!-- Full Screen Search Start -->
-        <div class="modal fade" id="searchModal" tabindex="-1">
-            <div class="modal-dialog modal-fullscreen">
-                <div class="modal-content" style="background: rgba(29, 29, 39, 0.7);">
-                    <div class="modal-header border-0">
-                        <button type="button" class="btn bg-white btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body d-flex align-items-center justify-content-center">
-                        <div class="input-group" style="max-width: 600px;">
-                            <input type="text" class="form-control bg-transparent border-light p-3" placeholder="Type search keyword">
-                            <button class="btn btn-light px-4"><i class="bi bi-search"></i></button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Full Screen Search End -->
+            <section class="mb-5">
+                <h2 class="mb-3">Algoritma dan Logika Pemrograman</h2>
+                <p>Algoritma adalah serangkaian langkah atau instruksi yang digunakan untuk menyelesaikan suatu masalah.
+                    Logika pemrograman adalah kemampuan berpikir secara sistematis dan logis dalam menyusun algoritma.</p>
+                <h3 class="mt-4">Karakteristik Algoritma</h3>
+                <ol>
+                    <li>Memiliki langkah-langkah yang jelas</li>
+                    <li>Memiliki input dan output</li>
+                    <li>Dapat dieksekusi dalam jumlah langkah yang terbatas</li>
+                </ol>
+            </section>
 
-
-        <!-- 404 Start -->
-        <div class="container-xxl py-5 wow fadeInUp" data-wow-delay="0.1s">
-            <div class="container px-lg-5 text-center">
-                <div class="row justify-content-center">
-                    <div class="col-lg-6">
-                        <i class="bi bi-exclamation-triangle display-1 text-primary"></i>
-                        <h1 class="display-1">404</h1>
-                        <h1 class="mb-4">Page Not Found</h1>
-                        <p class="mb-4">We’re sorry, the page you have looked for does not exist in our website! Maybe go to our home page or try to use a search?</p>
-                        <a class="btn btn-primary rounded-pill py-3 px-5" href="">Go Back To Home</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- 404 End -->
-
+            <section class="mb-5">
+                <h2 class="mb-3">Bahasa Pemrograman</h2>
+                <p>Bahasa pemrograman adalah sarana komunikasi antara manusia dan komputer.
+                    Beberapa bahasa pemrograman yang umum digunakan dalam pemrograman dasar meliputi:</p>
+                <table class="table table-bordered">
+                    <thead>
+                        <tr>
+                            <th>Bahasa Pemrograman</th>
+                            <th>Karakteristik</th>
+                            <th>Penggunaan</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Python</td>
+                            <td>Sintaks sederhana, mudah dibaca</td>
+                            <td>Kecerdasan buatan, analisis data, pengembangan web</td>
+                        </tr>
+                        <tr>
+                            <td>C++</td>
+                            <td>Performa tinggi, mendukung OOP</td>
+                            <td>Game development, sistem operasi</td>
+                        </tr>
+                        <tr>
+                            <td>Java</td>
+                            <td>Platform-independent, berbasis OOP</td>
+                            <td>Pengembangan aplikasi mobile, backend web</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+        </main>
 
         <!-- Footer Start -->
         <div class="container-fluid bg-primary text-light footer mt-5 pt-5 wow fadeIn" data-wow-delay="0.1s">
@@ -219,8 +178,8 @@
     </div>
 
     <!-- JavaScript Libraries -->
-    <script src="<?= base_url('lib/jquery/jquery-3.4.1.min.js') ?>"></script>
-    <script src="<?= base_url('lib/bootstrap/js/bootstrap.bundle.min.js') ?>"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
     <script src="<?= base_url('lib/wow/wow.min.js') ?>"></script>
     <script src="<?= base_url('lib/easing/easing.min.js') ?>"></script>
     <script src="<?= base_url('lib/waypoints/waypoints.min.js') ?>"></script>
