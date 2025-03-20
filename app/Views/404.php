@@ -65,7 +65,7 @@
                                 <div class="dropdown-menu m-0">
                                     <a href="<?= route_to('team') ?>" class="dropdown-item">Our Team</a>
                                     <a href="<?= route_to('testimonial') ?>" class="dropdown-item">Testimonial</a>
-                                    <a href="<?= route_to('errors/html/error_404') ?>" class="dropdown-item active">404 Page</a>
+                                    <a href="404.html" class="dropdown-item active">404 Page</a>
                                 </div>
                             </div>
                             <a href="<?= route_to('contact') ?>" class="nav-item nav-link">Contact</a>

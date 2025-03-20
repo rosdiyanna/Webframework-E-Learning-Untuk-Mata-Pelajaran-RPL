@@ -5,7 +5,7 @@ use CodeIgniter\Router\RouteCollection;
 /**
  * @var RouteCollection $routes
  */
-$routes->get('home', 'Home::index', ["as" => "home"]); // Halaman Home
+$routes->get('/', 'Home::index', ["as" => "home"]); // Halaman Home
 $routes->get('about', 'About::index', ["as" => "about"]); // Halaman About Us
 $routes->get('contact', 'Contact::index', ["as" => "contact"]);
 $routes->get('project', 'Project::index', ["as" => "project"]);
@@ -21,5 +21,5 @@ $routes->get('materiasj', 'materiasj::index', ["as" => "materiasj"]); // Halaman
 
 // Jika ingin menangani halaman yang tidak ditemukan
 $routes->set404Override(function () {
-    return view('errors/html/error_404'); // Pastikan file ini ada di 'app/Views/errors/html/error_404.php'
+    return view('errors/html/error_404', ['message' => 'Halaman yang Anda cari tidak ditemukan.']);
 });
