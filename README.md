@@ -16,6 +16,13 @@ MINGGU 2: PENGEMBANGAN BACKEND & DATABASE
 2. Membuat rancangan UI/UX (wireframe untuk beranda, halaman mata pelajaran, materi).
 3. Setup CodeIgniter  
 
+MINGGU 3: PENGEMBANGAN FRONTEND (UI/UX)
+
+1. Implementasi tampilan beranda menggunakan Bootstrap.
+2. Membuat halaman daftar mata pelajaran (menampilkan data dari database).
+3. Membuat halaman detail materi (menampilkan teks).
+4. Implementasi navigasi antar halaman.
+
 # CodeIgniter 4 Application Starter
 
 ## What is CodeIgniter?
