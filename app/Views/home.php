@@ -345,7 +345,7 @@
                 width: 200px;
                 height: 200px;
                 border-radius: 50%;
-                background-color: rgba(255, 255, 255, 0.05);
+                background-color: rgba(255, 255, 255, 0.12);
                 position: absolute;
                 z-index: 1;
             }
@@ -364,7 +364,7 @@
                 top: 40%;
                 left: 50%;
                 transform: translate(-50%, -50%);
-                background-color: rgba(255, 255, 255, 0.03);
+                background-color: rgba(255, 255, 255, 0.12);
                 width: 300px;
                 height: 300px;
             }

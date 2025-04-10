@@ -319,48 +319,38 @@ h6,
 }
 
 
-/*** Forum ***/
-.forum-section {
-    background-color: #2a2cc9;
-    /* Warna biru solid */
-    position: relative;
-    overflow: hidden;
+/*** Testimonial ***/
+.newsletter,
+.testimonial {
+    background:
+        url(../img/bg-top.png),
+        url(../img/bg-bottom.png);
+    background-position:
+        left top,
+        right bottom;
+    background-repeat: no-repeat;
 }
 
-.decor-circle1,
-.decor-circle2,
-.decor-circle3 {
-    width: 200px;
-    height: 200px;
-    border-radius: 50%;
-    background-color: rgba(255, 255, 255, 0.05);
-    position: absolute;
-    z-index: 1;
+.testimonial-carousel .owl-item .testimonial-item,
+.testimonial-carousel .owl-item.center .testimonial-item * {
+    transition: .5s;
 }
 
-.decor-circle1 {
-    top: -60px;
-    left: -60px;
+.testimonial-carousel .owl-item.center .testimonial-item {
+    background: var(--light) !important;
+    border-color: var(--light);
 }
 
-.decor-circle2 {
-    bottom: -60px;
-    right: -60px;
+.testimonial-carousel .owl-item.center .testimonial-item * {
+    color: #888888;
 }
 
-.decor-circle3 {
-    top: 40%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background-color: rgba(255, 255, 255, 0.03);
-    width: 300px;
-    height: 300px;
+.testimonial-carousel .owl-item.center .testimonial-item i {
+    color: var(--primary) !important;
 }
 
-@media (max-width: 768px) {
-    .forum-section {
-        padding: 3rem 1rem;
-    }
+.testimonial-carousel .owl-item.center .testimonial-item h6 {
+    color: var(--dark) !important;
 }
 
 
