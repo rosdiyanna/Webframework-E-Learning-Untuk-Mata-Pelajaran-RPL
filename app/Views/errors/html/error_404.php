@@ -84,7 +84,7 @@
 
         <p>
             <?php if (ENVIRONMENT !== 'production') : ?>
-                <?= nl2br(esc($message ?? 'Halaman tidak ditemukan.')) ?>
+                <?= nl2br(esc($message)) ?>
             <?php else : ?>
                 <?= lang('Errors.sorryCannotFind') ?>
             <?php endif; ?>

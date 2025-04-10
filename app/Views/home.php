@@ -26,7 +26,7 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarCollapse">
                     <div class="navbar-nav ms-auto py-0">
-                        <a href="home.html" class="nav-item nav-link active">Home</a>
+                        <a href="index.html" class="nav-item nav-link active">Home</a>
                         <a href="<?= route_to('about') ?>" class=" nav-item nav-link">About</a>
                         <a href="<?= route_to('matapelajaran') ?>" class="nav-item nav-link ">Mata Pelajaran</a>
                         <a href="<?= route_to('project') ?>" class="nav-item nav-link">Project</a>
@@ -35,7 +35,7 @@
                             <div class="dropdown-menu m-0">
                                 <a href="<?= route_to('team') ?>" class="dropdown-item">Our Team</a>
                                 <a href="<?= route_to('testimonial') ?>" class="dropdown-item">Testimonial</a>
-                                <a href="404.html" class="dropdown-item">404 Page</a>
+                                <a href="<?= route_to('errors/html/error_404') ?>" class="dropdown-item">404 Page</a>
                             </div>
                         </div>
                         <a href="<?= route_to('contact') ?>" class="nav-item nav-link">Contact</a>

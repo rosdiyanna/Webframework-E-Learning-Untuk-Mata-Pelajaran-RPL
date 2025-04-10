@@ -21,5 +21,5 @@ $routes->get('materiasj', 'materiasj::index', ["as" => "materiasj"]); // Halaman
 
 // Jika ingin menangani halaman yang tidak ditemukan
 $routes->set404Override(function () {
-    return view('errors/html/error_404', ['message' => 'Halaman yang Anda cari tidak ditemukan.']);
+    return view('errors/html/error_404'); // Pastikan file ini ada di 'app/Views/errors/html/error_404.php'
 });
