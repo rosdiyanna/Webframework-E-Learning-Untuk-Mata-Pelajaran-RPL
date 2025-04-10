@@ -18,6 +18,13 @@ $routes->get('materipbo', 'materipbo::index', ["as" => "materipbo"]); // Halaman
 $routes->get('materipweb', 'materipweb::index', ["as" => "materipweb"]); // Halaman Materi Pemrograman Web
 $routes->get('materippl', 'materippl::index', ["as" => "materippl"]); // Halaman Materi Pengembangan Perangkat Lunak
 $routes->get('materiasj', 'materiasj::index', ["as" => "materiasj"]); // Halaman Materi Administrasi Sistem Jaringan
+$routes->get('/', 'Forum::index');
+$routes->get('forum', 'Forum::index');
+$routes->get('forum/add', 'Forum::add');
+$routes->post('forum/add', 'Forum::add');
+$routes->get('forum/view/(:num)', 'Forum::view/$1');
+$routes->post('forum/add_comment/(:num)', 'Forum::add_comment/$1');
+
 
 // Jika ingin menangani halaman yang tidak ditemukan
 $routes->set404Override(function () {

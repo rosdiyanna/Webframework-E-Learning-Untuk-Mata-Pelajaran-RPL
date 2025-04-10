@@ -34,7 +34,7 @@
                             <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
                             <div class="dropdown-menu m-0">
                                 <a href="<?= route_to('team') ?>" class="dropdown-item">Our Team</a>
-                                <a href="<?= route_to('testimonial') ?>" class="dropdown-item">Testimonial</a>
+                                <a href="<?= route_to('forum') ?>" class="dropdown-item">Forum</a>
                                 <a href="<?= route_to('errors/html/error_404') ?>" class="dropdown-item">404 Page</a>
                             </div>
                         </div>
@@ -310,58 +310,72 @@
         <!-- Portfolio End -->
 
 
-        <!-- Testimonial Start -->
-        <div class="container-xxl bg-primary testimonial py-5 my-5 wow fadeInUp" data-wow-delay="0.1s">
-            <div class="container py-5 px-lg-5">
-                <div class="owl-carousel testimonial-carousel">
-                    <div class="testimonial-item bg-transparent border rounded text-white p-4">
-                        <i class="fa fa-quote-left fa-2x mb-3"></i>
-                        <p>Dolor et eos labore, stet justo sed est sed. Diam sed sed dolor stet amet eirmod eos labore diam</p>
-                        <div class="d-flex align-items-center">
-                            <img class="img-fluid flex-shrink-0 rounded-circle" src="img/testimonial-1.jpg" style="width: 50px; height: 50px;">
-                            <div class="ps-3">
-                                <h6 class="text-white mb-1">Client Name</h6>
-                                <small>Profession</small>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="testimonial-item bg-transparent border rounded text-white p-4">
-                        <i class="fa fa-quote-left fa-2x mb-3"></i>
-                        <p>Dolor et eos labore, stet justo sed est sed. Diam sed sed dolor stet amet eirmod eos labore diam</p>
-                        <div class="d-flex align-items-center">
-                            <img class="img-fluid flex-shrink-0 rounded-circle" src="img/testimonial-2.jpg" style="width: 50px; height: 50px;">
-                            <div class="ps-3">
-                                <h6 class="text-white mb-1">Client Name</h6>
-                                <small>Profession</small>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="testimonial-item bg-transparent border rounded text-white p-4">
-                        <i class="fa fa-quote-left fa-2x mb-3"></i>
-                        <p>Dolor et eos labore, stet justo sed est sed. Diam sed sed dolor stet amet eirmod eos labore diam</p>
-                        <div class="d-flex align-items-center">
-                            <img class="img-fluid flex-shrink-0 rounded-circle" src="img/testimonial-3.jpg" style="width: 50px; height: 50px;">
-                            <div class="ps-3">
-                                <h6 class="text-white mb-1">Client Name</h6>
-                                <small>Profession</small>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="testimonial-item bg-transparent border rounded text-white p-4">
-                        <i class="fa fa-quote-left fa-2x mb-3"></i>
-                        <p>Dolor et eos labore, stet justo sed est sed. Diam sed sed dolor stet amet eirmod eos labore diam</p>
-                        <div class="d-flex align-items-center">
-                            <img class="img-fluid flex-shrink-0 rounded-circle" src="img/testimonial-4.jpg" style="width: 50px; height: 50px;">
-                            <div class="ps-3">
-                                <h6 class="text-white mb-1">Client Name</h6>
-                                <small>Profession</small>
-                            </div>
-                        </div>
+        <!-- Forum Section Start -->
+        <section class="forum-section position-relative overflow-hidden text-white py-5">
+            <div class="container px-lg-5 position-relative" style="z-index: 2;">
+                <div class="row align-items-center">
+                    <div class="col-lg-8">
+                        <h2 class="fw-bold mb-3 text-white">Forum Diskusi</h2>
+                        <p class="mb-4 text-white">Setelah Mempelajari Materi, Ayo Diskusikan Bersama Classify!</p>
+                        <a href="<?= base_url('forum/add') ?>" class="btn btn-light text-primary rounded-pill px-4 py-2 fw-semibold shadow-sm">
+                            + Buat Topik Baru
+                        </a>
                     </div>
                 </div>
             </div>
-        </div>
-        <!-- Testimonial End -->
+
+            <!-- Decorative Circles -->
+            <div class="decor-circle1 position-absolute"></div>
+            <div class="decor-circle2 position-absolute"></div>
+            <div class="decor-circle3 position-absolute"></div>
+        </section>
+        <!-- Forum Section End -->
+
+        <style>
+            .forum-section {
+                background-color: #2a2cc9;
+                /* Warna biru solid */
+                position: relative;
+                overflow: hidden;
+            }
+
+            .decor-circle1,
+            .decor-circle2,
+            .decor-circle3 {
+                width: 200px;
+                height: 200px;
+                border-radius: 50%;
+                background-color: rgba(255, 255, 255, 0.05);
+                position: absolute;
+                z-index: 1;
+            }
+
+            .decor-circle1 {
+                top: -60px;
+                left: -60px;
+            }
+
+            .decor-circle2 {
+                bottom: -60px;
+                right: -60px;
+            }
+
+            .decor-circle3 {
+                top: 40%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                background-color: rgba(255, 255, 255, 0.03);
+                width: 300px;
+                height: 300px;
+            }
+
+            @media (max-width: 768px) {
+                .forum-section {
+                    padding: 3rem 1rem;
+                }
+            }
+        </style>
+
 
 
         <!-- Team Start -->

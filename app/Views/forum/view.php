@@ -5,6 +5,7 @@
 
 <body>
     <div class="container-xxl bg-white p-0">
+
         <!-- Spinner Start -->
         <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
             <div class="spinner-grow text-primary" style="width: 3rem; height: 3rem;" role="status">
@@ -13,13 +14,11 @@
         </div>
         <!-- Spinner End -->
 
-
         <!-- Navbar & Hero Start -->
         <div class="container-xxl position-relative p-0">
             <nav class="navbar navbar-expand-lg navbar-light px-4 px-lg-5 py-3 py-lg-0">
                 <a href="" class="navbar-brand p-0">
                     <h1 class="m-0"><i class="fa fa-search me-2"></i>CLASS<span class="fs-5">ify</span></h1>
-                    <!-- <img src="img/logo.png" alt="Logo"> -->
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
                     <span class="fa fa-bars"></span>
@@ -27,21 +26,12 @@
                 <div class="collapse navbar-collapse" id="navbarCollapse">
                     <div class="navbar-nav ms-auto py-0">
                         <a href="<?= route_to('home') ?>" class="nav-item nav-link">Home</a>
-                        <a href="<?= route_to('about') ?>" class="nav-item nav-link ">About</a>
-                        <a href="<?= route_to('matapelajaran') ?>" class="nav-item nav-link ">Mata Pelajaran</a>
+                        <a href="<?= route_to('about') ?>" class="nav-item nav-link">About</a>
+                        <a href="<?= route_to('matapelajaran') ?>" class="nav-item nav-link">Mata Pelajaran</a>
                         <a href="<?= route_to('project') ?>" class="nav-item nav-link">Project</a>
-                        <div class="nav-item dropdown">
-                            <a href="#" class="nav-link dropdown-toggle active" data-bs-toggle="dropdown">Pages</a>
-                            <div class="dropdown-menu m-0">
-                                <a href="<?= route_to('team') ?>" class="dropdown-item">Our Team</a>
-                                <a href="<?= route_to('testimonial') ?>" class="dropdown-item active">Testimonial</a>
-                                <a href="404.html" class="dropdown-item">404 Page</a>
-                            </div>
-                        </div>
+                        <a href="<?= route_to('forum') ?>" class="nav-item nav-link active">Forum</a>
                         <a href="<?= route_to('contact') ?>" class="nav-item nav-link">Contact</a>
                     </div>
-                    <butaton type="button" class="btn text-secondary ms-3" data-bs-toggle="modal" data-bs-target="#searchModal"><i class="fa fa-search"></i></butaton>
-                    <a href="https://htmlcodex.com/startup-company-website-template" class="btn btn-secondary text-light rounded-pill py-2 px-4 ms-3">Pro Version</a>
                 </div>
             </nav>
 
@@ -49,13 +39,12 @@
                 <div class="container my-5 py-5 px-lg-5">
                     <div class="row g-5 py-5">
                         <div class="col-12 text-center">
-                            <h1 class="text-white animated zoomIn">Testimonial</h1>
+                            <h1 class="text-white animated zoomIn">Forum Diskusi</h1>
                             <hr class="bg-white mx-auto mt-0" style="width: 90px;">
                             <nav aria-label="breadcrumb">
                                 <ol class="breadcrumb justify-content-center">
                                     <li class="breadcrumb-item"><a class="text-white" href="#">Home</a></li>
-                                    <li class="breadcrumb-item"><a class="text-white" href="#">Pages</a></li>
-                                    <li class="breadcrumb-item text-white active" aria-current="page">Testimonial</li>
+                                    <li class="breadcrumb-item text-white active" aria-current="page">Forum</li>
                                 </ol>
                             </nav>
                         </div>
@@ -65,79 +54,24 @@
         </div>
         <!-- Navbar & Hero End -->
 
+        <!-- Forum view -->
+        <h2><?= esc($forum['title']) ?></h2>
+        <p><?= esc($forum['content']) ?></p>
 
-        <!-- Full Screen Search Start -->
-        <div class="modal fade" id="searchModal" tabindex="-1">
-            <div class="modal-dialog modal-fullscreen">
-                <div class="modal-content" style="background: rgba(29, 29, 39, 0.7);">
-                    <div class="modal-header border-0">
-                        <button type="button" class="btn bg-white btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body d-flex align-items-center justify-content-center">
-                        <div class="input-group" style="max-width: 600px;">
-                            <input type="text" class="form-control bg-transparent border-light p-3" placeholder="Type search keyword">
-                            <button class="btn btn-light px-4"><i class="bi bi-search"></i></button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Full Screen Search End -->
+        <hr>
+        <h4>Komentar:</h4>
+        <ul>
+            <?php foreach ($comments as $comment): ?>
+                <li><?= esc($comment['comment']) ?></li>
+            <?php endforeach ?>
+        </ul>
 
-
-        <!-- Testimonial Start -->
-        <div class="container-xxl bg-primary testimonial py-5 wow fadeInUp" data-wow-delay="0.1s" style="margin: 6rem 0;">
-            <div class="container py-5 px-lg-5">
-                <div class="owl-carousel testimonial-carousel">
-                    <div class="testimonial-item bg-transparent border rounded text-white p-4">
-                        <i class="fa fa-quote-left fa-2x mb-3"></i>
-                        <p>Dolor et eos labore, stet justo sed est sed. Diam sed sed dolor stet amet eirmod eos labore diam</p>
-                        <div class="d-flex align-items-center">
-                            <img class="img-fluid flex-shrink-0 rounded-circle" src="img/testimonial-1.jpg" style="width: 50px; height: 50px;">
-                            <div class="ps-3">
-                                <h6 class="text-white mb-1">Client Name</h6>
-                                <small>Profession</small>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="testimonial-item bg-transparent border rounded text-white p-4">
-                        <i class="fa fa-quote-left fa-2x mb-3"></i>
-                        <p>Dolor et eos labore, stet justo sed est sed. Diam sed sed dolor stet amet eirmod eos labore diam</p>
-                        <div class="d-flex align-items-center">
-                            <img class="img-fluid flex-shrink-0 rounded-circle" src="img/testimonial-2.jpg" style="width: 50px; height: 50px;">
-                            <div class="ps-3">
-                                <h6 class="text-white mb-1">Client Name</h6>
-                                <small>Profession</small>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="testimonial-item bg-transparent border rounded text-white p-4">
-                        <i class="fa fa-quote-left fa-2x mb-3"></i>
-                        <p>Dolor et eos labore, stet justo sed est sed. Diam sed sed dolor stet amet eirmod eos labore diam</p>
-                        <div class="d-flex align-items-center">
-                            <img class="img-fluid flex-shrink-0 rounded-circle" src="img/testimonial-3.jpg" style="width: 50px; height: 50px;">
-                            <div class="ps-3">
-                                <h6 class="text-white mb-1">Client Name</h6>
-                                <small>Profession</small>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="testimonial-item bg-transparent border rounded text-white p-4">
-                        <i class="fa fa-quote-left fa-2x mb-3"></i>
-                        <p>Dolor et eos labore, stet justo sed est sed. Diam sed sed dolor stet amet eirmod eos labore diam</p>
-                        <div class="d-flex align-items-center">
-                            <img class="img-fluid flex-shrink-0 rounded-circle" src="img/testimonial-4.jpg" style="width: 50px; height: 50px;">
-                            <div class="ps-3">
-                                <h6 class="text-white mb-1">Client Name</h6>
-                                <small>Profession</small>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Testimonial End -->
-
+        <h4>Tambah Komentar</h4>
+        <form method="post" action="/forum/add_comment/<?= $forum['id'] ?>">
+            <textarea name="comment" rows="3" cols="40" required></textarea><br>
+            <button type="submit">Kirim</button>
+        </form>
+        <!-- Forum view End -->
 
         <!-- Footer Start -->
         <div class="container-fluid bg-primary text-light footer mt-5 pt-5 wow fadeIn" data-wow-delay="0.1s">
@@ -226,8 +160,8 @@
     </div>
 
     <!-- JavaScript Libraries -->
-    <script src="<?= base_url('lib/jquery-3.4.1.min.js') ?>"></script>
-    <script src="<?= base_url('lib/bootstrap.bundle.min.js') ?>"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
     <script src="<?= base_url('lib/wow/wow.min.js') ?>"></script>
     <script src="<?= base_url('lib/easing/easing.min.js') ?>"></script>
     <script src="<?= base_url('lib/waypoints/waypoints.min.js') ?>"></script>
