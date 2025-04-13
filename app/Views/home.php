@@ -29,19 +29,17 @@
                         <a href="index.html" class="nav-item nav-link active">Home</a>
                         <a href="<?= route_to('about') ?>" class=" nav-item nav-link">About</a>
                         <a href="<?= route_to('matapelajaran') ?>" class="nav-item nav-link ">Mata Pelajaran</a>
-                        <a href="<?= route_to('project') ?>" class="nav-item nav-link">Project</a>
+                        <a href="<?= route_to('forum.index') ?>" class="nav-item nav-link">Forum</a>
                         <div class="nav-item dropdown">
                             <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
                             <div class="dropdown-menu m-0">
+                                <a href="<?= route_to('project') ?>" class="dropdown-item">Project</a>
                                 <a href="<?= route_to('team') ?>" class="dropdown-item">Our Team</a>
-                                <a href="<?= route_to('forum.index') ?>" class="dropdown-item">Forum</a>
                                 <a href="<?= route_to('errors/html/error_404') ?>" class="dropdown-item">404 Page</a>
                             </div>
                         </div>
                         <a href="<?= route_to('contact') ?>" class="nav-item nav-link">Contact</a>
                     </div>
-                    <butaton type="button" class="btn text-secondary ms-3" data-bs-toggle="modal" data-bs-target="#searchModal"><i class="fa fa-search"></i></butaton>
-                    <a href="https://htmlcodex.com/startup-company-website-template" class="btn btn-secondary text-light rounded-pill py-2 px-4 ms-3">Pro Version</a>
                 </div>
             </nav>
 
@@ -62,26 +60,6 @@
             </div>
         </div>
         <!-- Navbar & Hero End -->
-
-
-        <!-- Full Screen Search Start -->
-        <div class="modal fade" id="searchModal" tabindex="-1">
-            <div class="modal-dialog modal-fullscreen">
-                <div class="modal-content" style="background: rgba(29, 29, 39, 0.7);">
-                    <div class="modal-header border-0">
-                        <button type="button" class="btn bg-white btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body d-flex align-items-center justify-content-center">
-                        <div class="input-group" style="max-width: 600px;">
-                            <input type="text" class="form-control bg-transparent border-light p-3" placeholder="Type search keyword">
-                            <button class="btn btn-light px-4"><i class="bi bi-search"></i></button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Full Screen Search End -->
-
 
         <!-- About Start -->
         <div class="container-xxl py-5">
@@ -106,28 +84,6 @@
         </div>
         <!-- About End -->
 
-
-        <!-- Newsletter Start -->
-        <div class="container-xxl bg-primary newsletter my-5 wow fadeInUp" data-wow-delay="0.1s">
-            <div class="container px-lg-5">
-                <div class="row align-items-center" style="height: 250px;">
-                    <div class="col-12 col-md-6">
-                        <h3 class="text-white">Ready to get started</h3>
-                        <small class="text-white">Diam elitr est dolore at sanctus nonumy.</small>
-                        <div class="position-relative w-100 mt-3">
-                            <input class="form-control border-0 rounded-pill w-100 ps-4 pe-5" type="text" placeholder="Enter Your Email" style="height: 48px;">
-                            <button type="button" class="btn shadow-none position-absolute top-0 end-0 mt-1 me-2"><i class="fa fa-paper-plane text-primary fs-4"></i></button>
-                        </div>
-                    </div>
-                    <div class="col-md-6 text-center mb-n5 d-none d-md-block">
-                        <img class="img-fluid mt-5" style="height: 250px;" src="img/newsletter.png">
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Newsletter End -->
-
-
         <!-- Mata Pelajaran Start -->
         <div class="container-xxl py-5">
             <div class="container px-lg-5">
@@ -135,8 +91,19 @@
                     <h6 class="position-relative d-inline text-primary ps-4">Our Mata Pelajaran</h6>
                     <h2 class="mt-2">What Solutions We Provide</h2>
                 </div>
-                <div class="row g-4">
-                    <div class="col-lg-4 col-md-6 wow zoomIn" data-wow-delay="0.1s">
+
+                <!-- Search Bar -->
+                <div class="mb-4 text-center">
+                    <div class="input-group">
+                        <input type="text" id="searchInput" class="form-control bg-transparent border-light p-3" placeholder="Search Mata Pelajaran...">
+                        <span class="input-group-text bg-transparent border-light" id="searchIcon">
+                            <i class="fa fa-search"></i>
+                        </span>
+                    </div>
+                </div>
+
+                <div class="row g-4" id="mataPelajaranList">
+                    <div class="col-lg-4 col-md-6 mata-pelajaran wow zoomIn" data-wow-delay="0.1s">
                         <div class="service-item d-flex flex-column justify-content-center text-center rounded">
                             <div class="service-icon flex-shrink-0">
                                 <i class="fa fa-code fa-2x"></i>
@@ -146,7 +113,7 @@
                             <a class="btn px-3 mt-auto mx-auto" href="materipemrogramandasar">Read More</a>
                         </div>
                     </div>
-                    <div class="col-lg-4 col-md-6 wow zoomIn" data-wow-delay="0.3s">
+                    <div class="col-lg-4 col-md-6 mata-pelajaran wow zoomIn" data-wow-delay="0.3s">
                         <div class="service-item d-flex flex-column justify-content-center text-center rounded">
                             <div class="service-icon flex-shrink-0">
                                 <i class="fa fa-database fa-2x"></i>
@@ -156,7 +123,7 @@
                             <a class="btn px-3 mt-auto mx-auto" href="materibasisdata">Read More</a>
                         </div>
                     </div>
-                    <div class="col-lg-4 col-md-6 wow zoomIn" data-wow-delay="0.6s">
+                    <div class="col-lg-4 col-md-6 mata-pelajaran wow zoomIn" data-wow-delay="0.6s">
                         <div class="service-item d-flex flex-column justify-content-center text-center rounded">
                             <div class="service-icon flex-shrink-0">
                                 <i class="fa fa-object-group fa-2x"></i>
@@ -166,7 +133,7 @@
                             <a class="btn px-3 mt-auto mx-auto" href="materipbo">Read More</a>
                         </div>
                     </div>
-                    <div class="col-lg-4 col-md-6 wow zoomIn" data-wow-delay="0.1s">
+                    <div class="col-lg-4 col-md-6 mata-pelajaran wow zoomIn" data-wow-delay="0.1s">
                         <div class="service-item d-flex flex-column justify-content-center text-center rounded">
                             <div class="service-icon flex-shrink-0">
                                 <i class="fa fa-globe fa-2x"></i>
@@ -176,7 +143,7 @@
                             <a class="btn px-3 mt-auto mx-auto" href="materipweb">Read More</a>
                         </div>
                     </div>
-                    <div class="col-lg-4 col-md-6 wow zoomIn" data-wow-delay="0.3s">
+                    <div class="col-lg-4 col-md-6 mata-pelajaran wow zoomIn" data-wow-delay="0.3s">
                         <div class="service-item d-flex flex-column justify-content-center text-center rounded">
                             <div class="service-icon flex-shrink-0">
                                 <i class="fa fa-cogs fa-2x"></i>
@@ -186,7 +153,7 @@
                             <a class="btn px-3 mt-auto mx-auto" href="materippl">Read More</a>
                         </div>
                     </div>
-                    <div class="col-lg-4 col-md-6 wow zoomIn" data-wow-delay="0.6s">
+                    <div class="col-lg-4 col-md-6 mata-pelajaran wow zoomIn" data-wow-delay="0.6s">
                         <div class="service-item d-flex flex-column justify-content-center text-center rounded">
                             <div class="service-icon flex-shrink-0">
                                 <i class="fa fa-server fa-2x"></i>
@@ -200,6 +167,73 @@
             </div>
         </div>
         <!-- Mata Pelajaran End -->
+
+
+        <!-- Forum Section -->
+        <section class="forum-section position-relative overflow-hidden text-white py-5">
+            <div class="container px-lg-5 position-relative" style="z-index: 2;">
+                <div class="row align-items-center">
+                    <div class="col-lg-8">
+                        <h2 class="fw-bold mb-3 text-white">Forum Diskusi</h2>
+                        <p class="mb-4 text-white">Setelah mempelajari materi, ayo diskusikan bersama Classify!</p>
+                        <a href="<?= route_to('forum.create') ?>" class="btn btn-light text-primary rounded-pill px-4 py-2 fw-semibold shadow-sm">
+                            + Buat Topik Baru
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Decorative Circles -->
+            <div class="decor-circle1 position-absolute"></div>
+            <div class="decor-circle2 position-absolute"></div>
+            <div class="decor-circle3 position-absolute"></div>
+        </section>
+        <!-- Forum Section End -->
+
+        <style>
+            .forum-section {
+                background-color: #2a2cc9;
+                /* Warna biru solid */
+                position: relative;
+                overflow: hidden;
+            }
+
+            .decor-circle1,
+            .decor-circle2,
+            .decor-circle3 {
+                width: 200px;
+                height: 200px;
+                border-radius: 50%;
+                background-color: rgba(255, 255, 255, 0.12);
+                position: absolute;
+                z-index: 1;
+            }
+
+            .decor-circle1 {
+                top: -60px;
+                left: -60px;
+            }
+
+            .decor-circle2 {
+                bottom: -60px;
+                right: -60px;
+            }
+
+            .decor-circle3 {
+                top: 40%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                background-color: rgba(255, 255, 255, 0.12);
+                width: 300px;
+                height: 300px;
+            }
+
+            @media (max-width: 768px) {
+                .forum-section {
+                    padding: 3rem 1rem;
+                }
+            }
+        </style>
 
         <!-- Portfolio Start -->
         <div class="container-xxl py-5">
@@ -294,74 +328,6 @@
             </div>
         </div>
         <!-- Portfolio End -->
-
-
-        <section class="forum-section position-relative overflow-hidden text-white py-5">
-            <div class="container px-lg-5 position-relative" style="z-index: 2;">
-                <div class="row align-items-center">
-                    <div class="col-lg-8">
-                        <h2 class="fw-bold mb-3 text-white">Forum Diskusi</h2>
-                        <p class="mb-4 text-white">Setelah mempelajari materi, ayo diskusikan bersama Classify!</p>
-                        <a href="<?= route_to('forum.create') ?>" class="btn btn-light text-primary rounded-pill px-4 py-2 fw-semibold shadow-sm">
-                            + Buat Topik Baru
-                        </a>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Decorative Circles -->
-            <div class="decor-circle1 position-absolute"></div>
-            <div class="decor-circle2 position-absolute"></div>
-            <div class="decor-circle3 position-absolute"></div>
-        </section>
-        <!-- Forum Section End -->
-
-        <style>
-            .forum-section {
-                background-color: #2a2cc9;
-                /* Warna biru solid */
-                position: relative;
-                overflow: hidden;
-            }
-
-            .decor-circle1,
-            .decor-circle2,
-            .decor-circle3 {
-                width: 200px;
-                height: 200px;
-                border-radius: 50%;
-                background-color: rgba(255, 255, 255, 0.12);
-                position: absolute;
-                z-index: 1;
-            }
-
-            .decor-circle1 {
-                top: -60px;
-                left: -60px;
-            }
-
-            .decor-circle2 {
-                bottom: -60px;
-                right: -60px;
-            }
-
-            .decor-circle3 {
-                top: 40%;
-                left: 50%;
-                transform: translate(-50%, -50%);
-                background-color: rgba(255, 255, 255, 0.12);
-                width: 300px;
-                height: 300px;
-            }
-
-            @media (max-width: 768px) {
-                .forum-section {
-                    padding: 3rem 1rem;
-                }
-            }
-        </style>
-
-
 
         <!-- Team Start -->
         <div class="container-xxl py-5">
@@ -526,6 +492,36 @@
 
     <!-- Template Javascript -->
     <script src="<?= base_url('js/main.js') ?>"></script>
+    <!-- JavaScript for Search -->
+    <script>
+        // Get the search input and search icon elements
+        const searchInput = document.getElementById('searchInput');
+        const searchIcon = document.getElementById('searchIcon');
+
+        // Function to filter mata pelajaran based on search input
+        function searchMataPelajaran() {
+            const keyword = searchInput.value.toLowerCase(); // Get the search term
+            const pelajaranItems = document.querySelectorAll('.mata-pelajaran');
+
+            pelajaranItems.forEach(item => {
+                const title = item.querySelector('h5').textContent.toLowerCase();
+                const description = item.querySelector('p').textContent.toLowerCase();
+
+                // If keyword matches title or description, display the item; otherwise, hide it
+                if (title.includes(keyword) || description.includes(keyword)) {
+                    item.style.display = 'block';
+                } else {
+                    item.style.display = 'none';
+                }
+            });
+        }
+
+        // Add event listener to the search icon for search functionality
+        searchIcon.addEventListener('click', searchMataPelajaran);
+
+        // Add event listener to input field to trigger search on typing
+        searchInput.addEventListener('input', searchMataPelajaran);
+    </script>
 </body>
 
 </html>

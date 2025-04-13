@@ -13,7 +13,6 @@
         </div>
         <!-- Spinner End -->
 
-
         <!-- Navbar & Hero Start -->
         <div class="container-xxl position-relative p-0">
             <nav class="navbar navbar-expand-lg navbar-light px-4 px-lg-5 py-3 py-lg-0">
@@ -27,23 +26,22 @@
                 <div class="collapse navbar-collapse" id="navbarCollapse">
                     <div class="navbar-nav ms-auto py-0">
                         <a href="<?= route_to('home') ?>" class="nav-item nav-link">Home</a>
-                        <a href="<?= route_to('about') ?>" class="nav-item nav-link">About</a>
+                        <a href="<?= route_to('about') ?>" class=" nav-item nav-link">About</a>
                         <a href="<?= route_to('matapelajaran') ?>" class="nav-item nav-link active">Mata Pelajaran</a>
-                        <a href="<?= route_to('project') ?>" class="nav-item nav-link">Project</a>
+                        <a href="<?= route_to('forum.index') ?>" class="nav-item nav-link">Forum</a>
                         <div class="nav-item dropdown">
                             <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
                             <div class="dropdown-menu m-0">
+                                <a href="<?= route_to('project') ?>" class="dropdown-item">Project</a>
                                 <a href="<?= route_to('team') ?>" class="dropdown-item">Our Team</a>
-                                <a href="<?= route_to('testimonial') ?>" class="dropdown-item">Testimonial</a>
-                                <a href="404.html" class="dropdown-item">404 Page</a>
+                                <a href="<?= route_to('errors/html/error_404') ?>" class="dropdown-item">404 Page</a>
                             </div>
                         </div>
                         <a href="<?= route_to('contact') ?>" class="nav-item nav-link">Contact</a>
                     </div>
-                    <butaton type="button" class="btn text-secondary ms-3" data-bs-toggle="modal" data-bs-target="#searchModal"><i class="fa fa-search"></i></butaton>
-                    <a href="https://htmlcodex.com/startup-company-website-template" class="btn btn-secondary text-light rounded-pill py-2 px-4 ms-3">Pro Version</a>
                 </div>
             </nav>
+
 
             <div class="container-xxl py-5 bg-primary hero-header mb-5">
                 <div class="container my-5 py-5 px-lg-5">
@@ -65,26 +63,6 @@
         </div>
         <!-- Navbar & Hero End -->
 
-
-        <!-- Full Screen Search Start -->
-        <div class="modal fade" id="searchModal" tabindex="-1">
-            <div class="modal-dialog modal-fullscreen">
-                <div class="modal-content" style="background: rgba(29, 29, 39, 0.7);">
-                    <div class="modal-header border-0">
-                        <button type="button" class="btn bg-white btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body d-flex align-items-center justify-content-center">
-                        <div class="input-group" style="max-width: 600px;">
-                            <input type="text" class="form-control bg-transparent border-light p-3" placeholder="Type search keyword">
-                            <button class="btn btn-light px-4"><i class="bi bi-search"></i></button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Full Screen Search End -->
-
-
         <!-- Mata Pelajaran Start -->
         <div class="container-xxl py-5">
             <div class="container px-lg-5">
@@ -92,8 +70,19 @@
                     <h6 class="position-relative d-inline text-primary ps-4">Our Mata Pelajaran</h6>
                     <h2 class="mt-2">What Solutions We Provide</h2>
                 </div>
-                <div class="row g-4">
-                    <div class="col-lg-4 col-md-6 wow zoomIn" data-wow-delay="0.1s">
+
+                <!-- Search Bar -->
+                <div class="mb-4 text-center">
+                    <div class="input-group">
+                        <input type="text" id="searchInput" class="form-control bg-transparent border-light p-3" placeholder="Search Mata Pelajaran...">
+                        <span class="input-group-text bg-transparent border-light" id="searchIcon">
+                            <i class="fa fa-search"></i>
+                        </span>
+                    </div>
+                </div>
+
+                <div class="row g-4" id="mataPelajaranList">
+                    <div class="col-lg-4 col-md-6 mata-pelajaran wow zoomIn" data-wow-delay="0.1s">
                         <div class="service-item d-flex flex-column justify-content-center text-center rounded">
                             <div class="service-icon flex-shrink-0">
                                 <i class="fa fa-code fa-2x"></i>
@@ -103,7 +92,7 @@
                             <a class="btn px-3 mt-auto mx-auto" href="materipemrogramandasar">Read More</a>
                         </div>
                     </div>
-                    <div class="col-lg-4 col-md-6 wow zoomIn" data-wow-delay="0.3s">
+                    <div class="col-lg-4 col-md-6 mata-pelajaran wow zoomIn" data-wow-delay="0.3s">
                         <div class="service-item d-flex flex-column justify-content-center text-center rounded">
                             <div class="service-icon flex-shrink-0">
                                 <i class="fa fa-database fa-2x"></i>
@@ -113,7 +102,7 @@
                             <a class="btn px-3 mt-auto mx-auto" href="materibasisdata">Read More</a>
                         </div>
                     </div>
-                    <div class="col-lg-4 col-md-6 wow zoomIn" data-wow-delay="0.6s">
+                    <div class="col-lg-4 col-md-6 mata-pelajaran wow zoomIn" data-wow-delay="0.6s">
                         <div class="service-item d-flex flex-column justify-content-center text-center rounded">
                             <div class="service-icon flex-shrink-0">
                                 <i class="fa fa-object-group fa-2x"></i>
@@ -123,7 +112,7 @@
                             <a class="btn px-3 mt-auto mx-auto" href="materipbo">Read More</a>
                         </div>
                     </div>
-                    <div class="col-lg-4 col-md-6 wow zoomIn" data-wow-delay="0.1s">
+                    <div class="col-lg-4 col-md-6 mata-pelajaran wow zoomIn" data-wow-delay="0.1s">
                         <div class="service-item d-flex flex-column justify-content-center text-center rounded">
                             <div class="service-icon flex-shrink-0">
                                 <i class="fa fa-globe fa-2x"></i>
@@ -133,7 +122,7 @@
                             <a class="btn px-3 mt-auto mx-auto" href="materipweb">Read More</a>
                         </div>
                     </div>
-                    <div class="col-lg-4 col-md-6 wow zoomIn" data-wow-delay="0.3s">
+                    <div class="col-lg-4 col-md-6 mata-pelajaran wow zoomIn" data-wow-delay="0.3s">
                         <div class="service-item d-flex flex-column justify-content-center text-center rounded">
                             <div class="service-icon flex-shrink-0">
                                 <i class="fa fa-cogs fa-2x"></i>
@@ -143,7 +132,7 @@
                             <a class="btn px-3 mt-auto mx-auto" href="materippl">Read More</a>
                         </div>
                     </div>
-                    <div class="col-lg-4 col-md-6 wow zoomIn" data-wow-delay="0.6s">
+                    <div class="col-lg-4 col-md-6 mata-pelajaran wow zoomIn" data-wow-delay="0.6s">
                         <div class="service-item d-flex flex-column justify-content-center text-center rounded">
                             <div class="service-icon flex-shrink-0">
                                 <i class="fa fa-server fa-2x"></i>
@@ -159,7 +148,6 @@
         <!-- Mata Pelajaran End -->
 
 
-
         <!-- Footer Start -->
         <div class="container-fluid bg-primary text-light footer mt-5 pt-5 wow fadeIn" data-wow-delay="0.1s">
             <div class="container py-5 px-lg-5">
@@ -168,7 +156,7 @@
                         <h5 class="text-white mb-4">Get In Touch</h5>
                         <p><i class="fa fa-map-marker-alt me-3"></i>Bandar Lampung,Indonesia</p>
                         <p><i class="fa fa-phone-alt me-3"></i>+62 852 6640 7728</p>
-                        <p><i class="fa fa-envelope me-3"></i>rosdiyannasafitri@gmail.com</p>
+                        <p><i class="fa fa-envelope me-3"></i>rosdiyanna@gmail.com</p>
                         <div class="d-flex pt-2">
                             <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-twitter"></i></a>
                             <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-facebook-f"></i></a>

@@ -19,6 +19,7 @@
             <nav class="navbar navbar-expand-lg navbar-light px-4 px-lg-5 py-3 py-lg-0">
                 <a href="" class="navbar-brand p-0">
                     <h1 class="m-0"><i class="fa fa-search me-2"></i>CLASS<span class="fs-5">ify</span></h1>
+                    <!-- <img src="img/logo.png" alt="Logo"> -->
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
                     <span class="fa fa-bars"></span>
@@ -26,14 +27,22 @@
                 <div class="collapse navbar-collapse" id="navbarCollapse">
                     <div class="navbar-nav ms-auto py-0">
                         <a href="<?= route_to('home') ?>" class="nav-item nav-link">Home</a>
-                        <a href="<?= route_to('about') ?>" class="nav-item nav-link">About</a>
-                        <a href="<?= route_to('matapelajaran') ?>" class="nav-item nav-link">Mata Pelajaran</a>
-                        <a href="<?= route_to('project') ?>" class="nav-item nav-link">Project</a>
+                        <a href="<?= route_to('about') ?>" class=" nav-item nav-link ">About</a>
+                        <a href="<?= route_to('matapelajaran') ?>" class="nav-item nav-link ">Mata Pelajaran</a>
                         <a href="<?= route_to('forum.index') ?>" class="nav-item nav-link active">Forum</a>
+                        <div class="nav-item dropdown">
+                            <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
+                            <div class="dropdown-menu m-0">
+                                <a href="<?= route_to('project') ?>" class="dropdown-item">Project</a>
+                                <a href="<?= route_to('team') ?>" class="dropdown-item">Our Team</a>
+                                <a href="<?= route_to('errors/html/error_404') ?>" class="dropdown-item">404 Page</a>
+                            </div>
+                        </div>
                         <a href="<?= route_to('contact') ?>" class="nav-item nav-link">Contact</a>
                     </div>
                 </div>
             </nav>
+
 
             <div class="container-xxl py-5 bg-primary hero-header mb-5">
                 <div class="container my-5 py-5 px-lg-5">
@@ -104,7 +113,7 @@
                         <h5 class="text-white mb-4">Get In Touch</h5>
                         <p><i class="fa fa-map-marker-alt me-3"></i>Bandar Lampung,Indonesia</p>
                         <p><i class="fa fa-phone-alt me-3"></i>+62 852 6640 7728</p>
-                        <p><i class="fa fa-envelope me-3"></i>rosdiyannasafitri@gmail.com</p>
+                        <p><i class="fa fa-envelope me-3"></i>rosdiyanna@gmail.com</p>
                         <div class="d-flex pt-2">
                             <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-twitter"></i></a>
                             <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-facebook-f"></i></a>

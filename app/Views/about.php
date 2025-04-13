@@ -27,21 +27,19 @@
                 <div class="collapse navbar-collapse" id="navbarCollapse">
                     <div class="navbar-nav ms-auto py-0">
                         <a href="<?= route_to('home') ?>" class="nav-item nav-link">Home</a>
-                        <a href="<?= route_to('about') ?>" class="nav-item nav-link active">About</a>
+                        <a href="<?= route_to('about') ?>" class=" nav-item nav-link active">About</a>
                         <a href="<?= route_to('matapelajaran') ?>" class="nav-item nav-link ">Mata Pelajaran</a>
-                        <a href="<?= route_to('project') ?>" class="nav-item nav-link">Project</a>
+                        <a href="<?= route_to('forum.index') ?>" class="nav-item nav-link">Forum</a>
                         <div class="nav-item dropdown">
                             <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
                             <div class="dropdown-menu m-0">
+                                <a href="<?= route_to('project') ?>" class="dropdown-item">Project</a>
                                 <a href="<?= route_to('team') ?>" class="dropdown-item">Our Team</a>
-                                <a href="<?= route_to('testimonial') ?>" class="dropdown-item">Testimonial</a>
-                                <a href="404.html" class="dropdown-item">404 Page</a>
+                                <a href="<?= route_to('errors/html/error_404') ?>" class="dropdown-item">404 Page</a>
                             </div>
                         </div>
                         <a href="<?= route_to('contact') ?>" class="nav-item nav-link">Contact</a>
                     </div>
-                    <butaton type="button" class="btn text-secondary ms-3" data-bs-toggle="modal" data-bs-target="#searchModal"><i class="fa fa-search"></i></butaton>
-                    <a href="https://htmlcodex.com/startup-company-website-template" class="btn btn-secondary text-light rounded-pill py-2 px-4 ms-3">Pro Version</a>
                 </div>
             </nav>
 
@@ -66,25 +64,6 @@
         <!-- Navbar & Hero End -->
 
 
-        <!-- Full Screen Search Start -->
-        <div class="modal fade" id="searchModal" tabindex="-1">
-            <div class="modal-dialog modal-fullscreen">
-                <div class="modal-content" style="background: rgba(29, 29, 39, 0.7);">
-                    <div class="modal-header border-0">
-                        <button type="button" class="btn bg-white btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body d-flex align-items-center justify-content-center">
-                        <div class="input-group" style="max-width: 600px;">
-                            <input type="text" class="form-control bg-transparent border-light p-3" placeholder="Type search keyword">
-                            <button class="btn btn-light px-4"><i class="bi bi-search"></i></button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Full Screen Search End -->
-
-
         <!-- About Start -->
         <div class="container-xxl py-5">
             <div class="container px-lg-5">
@@ -97,21 +76,7 @@
                         <p class="mb-4">Kami hadir untuk membantu siswa dan guru dalam memahami konsep dan keterampilan yang dibutuhkan di dunia pengembangan perangkat lunak, mulai dari pemrograman, basis data, hingga pengembangan aplikasi berbasis web dan mobile.
                             Dengan materi yang disusun secara sistematis, kami berkomitmen untuk menciptakan pengalaman belajar yang menyenangkan dan efektif. serta forum diskusi untuk memperdalam pemahamanmu tentang dunia RPL.</p>
                         <div class="row g-3">
-                            <div class="col-sm-6">
-                                <h6 class="mb-3"><i class="fa fa-check text-primary me-2"></i>Award Winning</h6>
-                                <h6 class="mb-0"><i class="fa fa-check text-primary me-2"></i>Professional Staff</h6>
-                            </div>
-                            <div class="col-sm-6">
-                                <h6 class="mb-3"><i class="fa fa-check text-primary me-2"></i>24/7 Support</h6>
-                                <h6 class="mb-0"><i class="fa fa-check text-primary me-2"></i>Fair Prices</h6>
-                            </div>
-                        </div>
-                        <div class="d-flex align-items-center mt-4">
-                            <a class="btn btn-primary rounded-pill px-4 me-3" href="">Read More</a>
-                            <a class="btn btn-outline-primary btn-square me-3" href=""><i class="fab fa-facebook-f"></i></a>
-                            <a class="btn btn-outline-primary btn-square me-3" href=""><i class="fab fa-twitter"></i></a>
-                            <a class="btn btn-outline-primary btn-square me-3" href=""><i class="fab fa-instagram"></i></a>
-                            <a class="btn btn-outline-primary btn-square" href=""><i class="fab fa-linkedin-in"></i></a>
+
                         </div>
                     </div>
                     <div class="col-lg-6">
@@ -121,28 +86,6 @@
             </div>
         </div>
         <!-- About End -->
-
-
-        <!-- Newsletter Start -->
-        <div class="container-xxl bg-primary newsletter my-5 wow fadeInUp" data-wow-delay="0.1s">
-            <div class="container px-lg-5">
-                <div class="row align-items-center" style="height: 250px;">
-                    <div class="col-12 col-md-6">
-                        <h3 class="text-white">Ready to get started</h3>
-                        <small class="text-white">Diam elitr est dolore at sanctus nonumy.</small>
-                        <div class="position-relative w-100 mt-3">
-                            <input class="form-control border-0 rounded-pill w-100 ps-4 pe-5" type="text" placeholder="Enter Your Email" style="height: 48px;">
-                            <button type="button" class="btn shadow-none position-absolute top-0 end-0 mt-1 me-2"><i class="fa fa-paper-plane text-primary fs-4"></i></button>
-                        </div>
-                    </div>
-                    <div class="col-md-6 text-center mb-n5 d-none d-md-block">
-                        <img class="img-fluid mt-5" style="height: 250px;" src="img/newsletter.png">
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Newsletter End -->
-
 
         <!-- Team Start -->
         <div class="container-xxl py-5">
@@ -217,7 +160,7 @@
                         <h5 class="text-white mb-4">Get In Touch</h5>
                         <p><i class="fa fa-map-marker-alt me-3"></i>Bandar Lampung,Indonesia</p>
                         <p><i class="fa fa-phone-alt me-3"></i>+62 852 6640 7728</p>
-                        <p><i class="fa fa-envelope me-3"></i>rosdiyannasafitri@gmail.com</p>
+                        <p><i class="fa fa-envelope me-3"></i>rosdiyanna@gmail.com</p>
                         <div class="d-flex pt-2">
                             <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-twitter"></i></a>
                             <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-facebook-f"></i></a>
