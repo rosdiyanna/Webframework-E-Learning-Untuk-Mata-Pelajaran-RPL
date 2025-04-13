@@ -2,55 +2,53 @@
 
 namespace App\Controllers;
 
-use App\Models\ForumModel;
-use App\Models\CommentModel;
+use App\Models\ThreadModel;
+use App\Models\PostModel;
 
 class Forum extends BaseController
 {
-    protected $forumModel;
-    protected $commentModel;
-
-    public function __construct()
-    {
-        $this->forumModel = new ForumModel();
-        $this->commentModel = new CommentModel();
-    }
-
     public function index()
     {
-        $data['forums'] = $this->forumModel->findAll();
+        $threadModel = new ThreadModel();
+        $data['threads'] = $threadModel->orderBy('created_at', 'DESC')->findAll();
         return view('forum/index', $data);
     }
 
-    public function add()
+    public function create()
     {
-        if ($this->request->getMethod() === 'post') {
-            $this->forumModel->save([
-                'title' => $this->request->getPost('title'),
-                'content' => $this->request->getPost('content')
-            ]);
-            return redirect()->to('/forum');
-        }
-
-        return view('forum/add');
+        return view('forum/create');
     }
 
-    public function view($id)
+    public function store()
     {
-        $data['forum'] = $this->forumModel->find($id);
-        $data['comments'] = $this->commentModel->where('forum_id', $id)->findAll();
-        return view('forum/view', $data);
+        $threadModel = new ThreadModel();
+        $threadModel->save([
+            'author_name' => $this->request->getPost('author_name'),
+            'title' => $this->request->getPost('title'),
+            'content' => $this->request->getPost('content'),
+        ]);
+        return redirect()->to('/forum');
     }
 
-    public function add_comment($id)
+    public function detail($id)
     {
-        if ($this->request->getMethod() === 'post') {
-            $this->commentModel->save([
-                'forum_id' => $id,
-                'comment' => $this->request->getPost('comment')
-            ]);
-        }
+        $threadModel = new ThreadModel();
+        $postModel = new PostModel();
 
-        return redirect()->to('/forum/view/' . $id);
+        $data['thread'] = $threadModel->find($id);
+        $data['posts'] = $postModel->where('thread_id', $id)->orderBy('created_at')->findAll();
+
+        return view('forum/detail', $data);
+    }
+
+    public function reply($id)
+    {
+        $postModel = new PostModel();
+        $postModel->save([
+            'thread_id' => $id,
+            'author_name' => $this->request->getPost('author_name'),
+            'content' => $this->request->getPost('content'),
+        ]);
+        return redirect()->to('/forum/detail/' . $id);
     }
 }

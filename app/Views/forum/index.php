@@ -29,7 +29,7 @@
                         <a href="<?= route_to('about') ?>" class="nav-item nav-link">About</a>
                         <a href="<?= route_to('matapelajaran') ?>" class="nav-item nav-link">Mata Pelajaran</a>
                         <a href="<?= route_to('project') ?>" class="nav-item nav-link">Project</a>
-                        <a href="<?= route_to('forum') ?>" class="nav-item nav-link active">Forum</a>
+                        <a href="<?= route_to('forum.index') ?>" class="nav-item nav-link active">Forum</a>
                         <a href="<?= route_to('contact') ?>" class="nav-item nav-link">Contact</a>
                     </div>
                 </div>
@@ -43,7 +43,7 @@
                             <hr class="bg-white mx-auto mt-0" style="width: 90px;">
                             <nav aria-label="breadcrumb">
                                 <ol class="breadcrumb justify-content-center">
-                                    <li class="breadcrumb-item"><a class="text-white" href="#">Home</a></li>
+                                    <li class="breadcrumb-item"><a class="text-white" href="<?= route_to('home') ?>" class="nav-item nav-link">Home</a></li>
                                     <li class="breadcrumb-item text-white active" aria-current="page">Forum</li>
                                 </ol>
                             </nav>
@@ -55,13 +55,45 @@
         <!-- Navbar & Hero End -->
 
         <!-- Forum  -->
-        <h2>Daftar Forum</h2>
-        <a href="/forum/add">+ Buat Topik Baru</a>
-        <ul>
-            <?php foreach ($forums as $forum): ?>
-                <li><a href="/forum/view/<?= $forum['id'] ?>"><?= esc($forum['title']) ?></a></li>
-            <?php endforeach ?>
-        </ul>
+        <section class="py-5" style="background-color: #ffffff;">
+            <div class="container">
+                <!-- Header Forum -->
+                <div class="d-flex justify-content-between align-items-center mb-4">
+                    <div>
+                        <h2 class="fw-bold mb-1">Forum Diskusi</h2>
+                        <p class="text-muted">Temukan dan ikuti diskusi yang sedang berlangsung.</p>
+                    </div>
+                    <a href="/forum/create" class="btn btn-primary rounded-pill shadow-sm px-4 py-2 fw-semibold">
+                        <i class="bi bi-plus-circle me-2"></i> Buat Diskusi
+                    </a>
+                </div>
+
+                <!-- List Diskusi -->
+                <?php if (!empty($threads)): ?>
+                    <div class="row">
+                        <?php foreach ($threads as $thread): ?>
+                            <div class="col-12 mb-3">
+                                <div class="p-4 rounded-3 shadow-sm border bg-white d-flex justify-content-between align-items-center">
+                                    <div>
+                                        <h6 class="mb-1 text-primary fw-semibold"><?= esc($thread['title']) ?></h6>
+                                        <small class="text-muted">
+                                            <i class="bi bi-person-circle me-1"></i> <?= esc($thread['author_name']) ?>
+                                        </small>
+                                    </div>
+                                    <a href="/forum/detail/<?= $thread['id'] ?>" class="btn btn-outline-primary btn-sm rounded-pill">
+                                        Lihat Diskusi
+                                    </a>
+                                </div>
+                            </div>
+                        <?php endforeach; ?>
+                    </div>
+                <?php else: ?>
+                    <div class="alert alert-info text-center py-4 shadow-sm rounded">
+                        Belum ada diskusi. Yuk jadi yang pertama membuat!
+                    </div>
+                <?php endif; ?>
+            </div>
+        </section>
         <!-- Forum End -->
 
         <!-- Footer Start -->

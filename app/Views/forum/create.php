@@ -29,7 +29,7 @@
                         <a href="<?= route_to('about') ?>" class="nav-item nav-link">About</a>
                         <a href="<?= route_to('matapelajaran') ?>" class="nav-item nav-link">Mata Pelajaran</a>
                         <a href="<?= route_to('project') ?>" class="nav-item nav-link">Project</a>
-                        <a href="<?= route_to('forum') ?>" class="nav-item nav-link active">Forum</a>
+                        <a href="<?= route_to('forum.create') ?>" class="nav-item nav-link active">Forum</a>
                         <a href="<?= route_to('contact') ?>" class="nav-item nav-link">Contact</a>
                     </div>
                 </div>
@@ -43,7 +43,7 @@
                             <hr class="bg-white mx-auto mt-0" style="width: 90px;">
                             <nav aria-label="breadcrumb">
                                 <ol class="breadcrumb justify-content-center">
-                                    <li class="breadcrumb-item"><a class="text-white" href="#">Home</a></li>
+                                    <li class="breadcrumb-item"><a class="text-white" href="<?= route_to('home') ?>" class="nav-item nav-link">Home</a></li>
                                     <li class="breadcrumb-item text-white active" aria-current="page">Forum</li>
                                 </ol>
                             </nav>
@@ -55,10 +55,11 @@
         <!-- Navbar & Hero End -->
 
         <!-- Forum add -->
-        <h2>Buat Topik Baru</h2>
-        <form method="post" action="/forum/add">
+        <h2>Buat Diskusi Baru</h2>
+        <form method="post" action="/forum/store">
+            Nama: <input type="text" name="author_name" required><br>
             Judul: <input type="text" name="title" required><br>
-            Isi: <br><textarea name="content" rows="5" cols="40" required></textarea><br>
+            Isi: <textarea name="content" required></textarea><br>
             <button type="submit">Kirim</button>
         </form>
         <!-- Forum add End -->
@@ -71,7 +72,7 @@
                         <h5 class="text-white mb-4">Get In Touch</h5>
                         <p><i class="fa fa-map-marker-alt me-3"></i>Bandar Lampung,Indonesia</p>
                         <p><i class="fa fa-phone-alt me-3"></i>+62 852 6640 7728</p>
-                        <p><i class="fa fa-envelope me-3"></i>rosdiyannasafitri@gmail.com</p>
+                        <p><i class="fa fa-envelope me-3"></i>rosdiyanna@gmail.com</p>
                         <div class="d-flex pt-2">
                             <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-twitter"></i></a>
                             <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-facebook-f"></i></a>

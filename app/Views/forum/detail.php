@@ -29,7 +29,7 @@
                         <a href="<?= route_to('about') ?>" class="nav-item nav-link">About</a>
                         <a href="<?= route_to('matapelajaran') ?>" class="nav-item nav-link">Mata Pelajaran</a>
                         <a href="<?= route_to('project') ?>" class="nav-item nav-link">Project</a>
-                        <a href="<?= route_to('forum') ?>" class="nav-item nav-link active">Forum</a>
+                        <a href="<?= route_to('forum.index') ?>" class="nav-item nav-link active">Forum</a>
                         <a href="<?= route_to('contact') ?>" class="nav-item nav-link">Contact</a>
                     </div>
                 </div>
@@ -55,21 +55,21 @@
         <!-- Navbar & Hero End -->
 
         <!-- Forum view -->
-        <h2><?= esc($forum['title']) ?></h2>
-        <p><?= esc($forum['content']) ?></p>
+        <h2><?= esc($thread['title']) ?></h2>
+        <p><strong><?= esc($thread['author_name']) ?>:</strong> <?= esc($thread['content']) ?></p>
 
         <hr>
-        <h4>Komentar:</h4>
-        <ul>
-            <?php foreach ($comments as $comment): ?>
-                <li><?= esc($comment['comment']) ?></li>
-            <?php endforeach ?>
-        </ul>
+        <h4>Balasan:</h4>
+        <?php foreach ($posts as $post): ?>
+            <p><strong><?= esc($post['author_name']) ?>:</strong> <?= esc($post['content']) ?></p>
+        <?php endforeach; ?>
 
-        <h4>Tambah Komentar</h4>
-        <form method="post" action="/forum/add_comment/<?= $forum['id'] ?>">
-            <textarea name="comment" rows="3" cols="40" required></textarea><br>
-            <button type="submit">Kirim</button>
+        <hr>
+        <h4>Balas Diskusi</h4>
+        <form method="post" action="/forum/reply/<?= $thread['id'] ?>">
+            Nama: <input type="text" name="author_name" required><br>
+            Balasan: <textarea name="content" required></textarea><br>
+            <button type="submit">Kirim Balasan</button>
         </form>
         <!-- Forum view End -->
 

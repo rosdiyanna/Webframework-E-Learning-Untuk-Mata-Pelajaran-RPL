@@ -34,7 +34,7 @@
                             <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
                             <div class="dropdown-menu m-0">
                                 <a href="<?= route_to('team') ?>" class="dropdown-item">Our Team</a>
-                                <a href="<?= route_to('forum') ?>" class="dropdown-item">Forum</a>
+                                <a href="<?= route_to('forum.index') ?>" class="dropdown-item">Forum</a>
                                 <a href="<?= route_to('errors/html/error_404') ?>" class="dropdown-item">404 Page</a>
                             </div>
                         </div>
@@ -51,8 +51,8 @@
                         <div class="col-lg-6 text-center text-lg-start">
                             <h1 class="text-white mb-4 animated zoomIn">Learn Software Engineering (RPL) Easily & Interactively</h1>
                             <p class="text-white pb-3 animated zoomIn">Become a tech expert with CLASSify! An interactive learning platform designed specifically for vocational high school students majoring in Software Engineering (RPL). Learn programming, application development, and software technology in an easier, faster, and more fun way!</p>
-                            <a href="" class="btn btn-light py-sm-3 px-sm-5 rounded-pill me-3 animated slideInLeft">Free Quote</a>
-                            <a href="" class="btn btn-outline-light py-sm-3 px-sm-5 rounded-pill animated slideInRight">Contact Us</a>
+                            <a href="<?= route_to('about') ?>" class="btn btn-light py-sm-3 px-sm-5 rounded-pill me-3 animated slideInLeft">About</a>
+                            <a href="<?= route_to('contact') ?>" class="btn btn-outline-light py-sm-3 px-sm-5 rounded-pill animated slideInRight">Contact Us</a>
                         </div>
                         <div class="col-lg-6 text-center text-lg-start">
                             <img class="img-fluid" src="img/hero.png" alt="">
@@ -95,21 +95,7 @@
                         <p class="mb-4">Kami hadir untuk membantu siswa dan guru dalam memahami konsep dan keterampilan yang dibutuhkan di dunia pengembangan perangkat lunak, mulai dari pemrograman, basis data, hingga pengembangan aplikasi berbasis web dan mobile.
                             Dengan materi yang disusun secara sistematis, kami berkomitmen untuk menciptakan pengalaman belajar yang menyenangkan dan efektif. serta forum diskusi untuk memperdalam pemahamanmu tentang dunia RPL.</p>
                         <div class="row g-3">
-                            <div class="col-sm-6">
-                                <h6 class="mb-3"><i class="fa fa-check text-primary me-2"></i>Award Winning</h6>
-                                <h6 class="mb-0"><i class="fa fa-check text-primary me-2"></i>Professional Staff</h6>
-                            </div>
-                            <div class="col-sm-6">
-                                <h6 class="mb-3"><i class="fa fa-check text-primary me-2"></i>24/7 Support</h6>
-                                <h6 class="mb-0"><i class="fa fa-check text-primary me-2"></i>Fair Prices</h6>
-                            </div>
-                        </div>
-                        <div class="d-flex align-items-center mt-4">
-                            <a class="btn btn-primary rounded-pill px-4 me-3" href="">Read More</a>
-                            <a class="btn btn-outline-primary btn-square me-3" href=""><i class="fab fa-facebook-f"></i></a>
-                            <a class="btn btn-outline-primary btn-square me-3" href=""><i class="fab fa-twitter"></i></a>
-                            <a class="btn btn-outline-primary btn-square me-3" href=""><i class="fab fa-instagram"></i></a>
-                            <a class="btn btn-outline-primary btn-square" href=""><i class="fab fa-linkedin-in"></i></a>
+
                         </div>
                     </div>
                     <div class="col-lg-6">
@@ -310,14 +296,13 @@
         <!-- Portfolio End -->
 
 
-        <!-- Forum Section Start -->
         <section class="forum-section position-relative overflow-hidden text-white py-5">
             <div class="container px-lg-5 position-relative" style="z-index: 2;">
                 <div class="row align-items-center">
                     <div class="col-lg-8">
                         <h2 class="fw-bold mb-3 text-white">Forum Diskusi</h2>
-                        <p class="mb-4 text-white">Setelah Mempelajari Materi, Ayo Diskusikan Bersama Classify!</p>
-                        <a href="<?= base_url('forum/add') ?>" class="btn btn-light text-primary rounded-pill px-4 py-2 fw-semibold shadow-sm">
+                        <p class="mb-4 text-white">Setelah mempelajari materi, ayo diskusikan bersama Classify!</p>
+                        <a href="<?= route_to('forum.create') ?>" class="btn btn-light text-primary rounded-pill px-4 py-2 fw-semibold shadow-sm">
                             + Buat Topik Baru
                         </a>
                     </div>
@@ -451,7 +436,7 @@
                         <h5 class="text-white mb-4">Get In Touch</h5>
                         <p><i class="fa fa-map-marker-alt me-3"></i>Bandar Lampung,Indonesia</p>
                         <p><i class="fa fa-phone-alt me-3"></i>+62 852 6640 7728</p>
-                        <p><i class="fa fa-envelope me-3"></i>rosdiyannasafitri.com</p>
+                        <p><i class="fa fa-envelope me-3"></i>rosdiyanna@gmail.com</p>
                         <div class="d-flex pt-2">
                             <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-twitter"></i></a>
                             <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-facebook-f"></i></a>
