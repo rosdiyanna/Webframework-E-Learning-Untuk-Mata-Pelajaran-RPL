@@ -3,6 +3,7 @@ HEAD
 # Webframework-E-Learning-Untuk-Mata-Pelajaran-RPL
 
 Website E-Learning RPL adalah platform pembelajaran berbasis web yang menyediakan materi untuk siswa SMK jurusan Rekayasa Perangkat Lunak.
+
 Minggu 1: Perencanaan & Setup Awal
 Tujuan: Menyiapkan konsep, teknologi, dan lingkungan pengembangan.
 
@@ -22,6 +23,12 @@ MINGGU 3: PENGEMBANGAN FRONTEND (UI/UX)
 2. Membuat halaman daftar mata pelajaran (menampilkan data dari database).
 3. Membuat halaman detail materi (menampilkan teks).
 4. Implementasi navigasi antar halaman.
+
+MINGGU 4: Merancang Projek Web Configurasi dan Pembuatan Database dan Table pada Framwork
+
+1. Membuat database menggunakan Phpmyadmin
+2. membuat table menggunakan SQL
+3. configurasi database ke project
 
 # CodeIgniter 4 Application Starter
 
