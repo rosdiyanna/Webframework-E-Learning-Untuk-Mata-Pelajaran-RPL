@@ -7,10 +7,8 @@ use CodeIgniter\Router\RouteCollection;
  */
 $routes->get('/', 'Home::index', ["as" => "home"]); // Halaman Home
 $routes->get('about', 'About::index', ["as" => "about"]); // Halaman About Us
-$routes->get('contact', 'Contact::index', ["as" => "contact"]);
-$routes->get('project', 'Project::index', ["as" => "project"]);
-$routes->get('team', 'Team::index', ["as" => "team"]);
-$routes->get('testimonial', 'Testimonial::index', ["as" => "testimonial"]);
+$routes->get('contact', 'Contact::index', ["as" => "contact"]); // Halaman contact
+$routes->get('project', 'Project::index', ["as" => "project"]); // Halaman project
 $routes->get('matapelajaran', 'MataPelajaran::index', ["as" => "matapelajaran"]); // Halaman Mata Pelajaran
 $routes->get('materipemrogramandasar', 'materipemrogramandasar::index', ["as" => "materipemrogramandasar"]); // Halaman Materi Pemrograman Dasar
 $routes->get('materibasisdata', 'materibasisdata::index', ["as" => "materibasisdata"]); // Halaman Materi Basis Data

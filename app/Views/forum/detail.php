@@ -26,10 +26,10 @@
                 <div class="collapse navbar-collapse" id="navbarCollapse">
                     <div class="navbar-nav ms-auto py-0">
                         <a href="<?= route_to('home') ?>" class="nav-item nav-link">Home</a>
-                        <a href="<?= route_to('about') ?>" class="nav-item nav-link">About</a>
-                        <a href="<?= route_to('matapelajaran') ?>" class="nav-item nav-link">Mata Pelajaran</a>
-                        <a href="<?= route_to('project') ?>" class="nav-item nav-link">Project</a>
+                        <a href="<?= route_to('about') ?>" class=" nav-item nav-link ">About</a>
+                        <a href="<?= route_to('matapelajaran') ?>" class="nav-item nav-link ">Mata Pelajaran</a>
                         <a href="<?= route_to('forum.index') ?>" class="nav-item nav-link active">Forum</a>
+                        <a href="<?= route_to('project') ?>" class="nav-item nav-link ">Project</a>
                         <a href="<?= route_to('contact') ?>" class="nav-item nav-link">Contact</a>
                     </div>
                 </div>

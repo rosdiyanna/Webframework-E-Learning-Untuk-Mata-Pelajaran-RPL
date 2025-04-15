@@ -27,61 +27,56 @@
                 <div class="collapse navbar-collapse" id="navbarCollapse">
                     <div class="navbar-nav ms-auto py-0">
                         <a href="<?= route_to('home') ?>" class="nav-item nav-link">Home</a>
-                        <a href="<?= route_to('about') ?>" class=" nav-item nav-link">About</a>
+                        <a href="<?= route_to('about') ?>" class=" nav-item nav-link ">About</a>
                         <a href="<?= route_to('matapelajaran') ?>" class="nav-item nav-link active">Mata Pelajaran</a>
                         <a href="<?= route_to('forum.index') ?>" class="nav-item nav-link">Forum</a>
-                        <div class="nav-item dropdown">
-                            <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
-                            <div class="dropdown-menu m-0">
-                                <a href="<?= route_to('project') ?>" class="dropdown-item">Project</a>
-                                <a href="<?= route_to('team') ?>" class="dropdown-item">Our Team</a>
-                                <a href="<?= route_to('errors/html/error_404') ?>" class="dropdown-item">404 Page</a>
-                            </div>
-                        </div>
+                        <a href="<?= route_to('project') ?>" class="nav-item nav-link ">Project</a>
                         <a href="<?= route_to('contact') ?>" class="nav-item nav-link">Contact</a>
                     </div>
                 </div>
-            </nav>
+        </div>
+    </div>
+    </nav>
 
-            <div class="container-xxl py-5 bg-primary hero-header mb-5">
-                <div class="container my-5 py-5 px-lg-5">
-                    <div class="row g-5 py-5">
-                        <div class="col-12 text-center">
-                            <h1 class="text-white animated zoomIn">Materi Pemrograman Web</h1>
-                            <hr class="bg-white mx-auto mt-0" style="width: 90px;">
-                            <nav aria-label="breadcrumb">
-                                <ol class="breadcrumb justify-content-center">
-                                    <li class="breadcrumb-item"><a class="text-white" href="<?= route_to('home') ?>">Home</a></li>
-                                    <li class="breadcrumb-item"><a class="text-white" href="<?= route_to('matapelajaran') ?>">Mapel</a></li>
-                                    <li class="breadcrumb-item text-white active" aria-current="page">Materi</li>
-                                </ol>
-                            </nav>
-                        </div>
-                    </div>
+    <div class="container-xxl py-5 bg-primary hero-header mb-5">
+        <div class="container my-5 py-5 px-lg-5">
+            <div class="row g-5 py-5">
+                <div class="col-12 text-center">
+                    <h1 class="text-white animated zoomIn">Materi Pemrograman Web</h1>
+                    <hr class="bg-white mx-auto mt-0" style="width: 90px;">
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb justify-content-center">
+                            <li class="breadcrumb-item"><a class="text-white" href="<?= route_to('home') ?>">Home</a></li>
+                            <li class="breadcrumb-item"><a class="text-white" href="<?= route_to('matapelajaran') ?>">Mapel</a></li>
+                            <li class="breadcrumb-item text-white active" aria-current="page">Materi</li>
+                        </ol>
+                    </nav>
                 </div>
             </div>
         </div>
-        <!-- Navbar & Hero End -->
+    </div>
+    </div>
+    <!-- Navbar & Hero End -->
 
-        <main class="container px-4 px-lg-5 py-5">
-            <section class="mb-5">
-                <h2 class="mb-3">Pengenalan Pemrograman Web</h2>
-                <p>Pemrograman web adalah proses pembuatan dan pengembangan aplikasi berbasis web yang dapat diakses melalui
-                    browser. Pemrograman web terdiri dari tiga komponen utama:</p>
-                <ul>
-                    <li><strong>Front-end</strong>: Bagian tampilan yang berinteraksi langsung dengan pengguna, menggunakan HTML, CSS, dan JavaScript.</li>
-                    <li><strong>Back-end</strong>: Bagian server yang menangani logika bisnis dan pengolahan data, menggunakan bahasa seperti PHP, Python, atau Node.js.</li>
-                    <li><strong>Database</strong>: Tempat penyimpanan data yang digunakan dalam aplikasi web, seperti MySQL atau MongoDB.</li>
-                </ul>
-            </section>
+    <main class="container px-4 px-lg-5 py-5">
+        <section class="mb-5">
+            <h2 class="mb-3">Pengenalan Pemrograman Web</h2>
+            <p>Pemrograman web adalah proses pembuatan dan pengembangan aplikasi berbasis web yang dapat diakses melalui
+                browser. Pemrograman web terdiri dari tiga komponen utama:</p>
+            <ul>
+                <li><strong>Front-end</strong>: Bagian tampilan yang berinteraksi langsung dengan pengguna, menggunakan HTML, CSS, dan JavaScript.</li>
+                <li><strong>Back-end</strong>: Bagian server yang menangani logika bisnis dan pengolahan data, menggunakan bahasa seperti PHP, Python, atau Node.js.</li>
+                <li><strong>Database</strong>: Tempat penyimpanan data yang digunakan dalam aplikasi web, seperti MySQL atau MongoDB.</li>
+            </ul>
+        </section>
 
-            <section class="mb-5">
-                <h2 class="mb-3">HTML (HyperText Markup Language)</h2>
-                <p>HTML adalah bahasa markup yang digunakan untuk membuat struktur halaman web. Dengan HTML, kita bisa menambahkan
-                    teks, gambar, video, dan elemen lain pada halaman web.</p>
+        <section class="mb-5">
+            <h2 class="mb-3">HTML (HyperText Markup Language)</h2>
+            <p>HTML adalah bahasa markup yang digunakan untuk membuat struktur halaman web. Dengan HTML, kita bisa menambahkan
+                teks, gambar, video, dan elemen lain pada halaman web.</p>
 
-                <h3 class="mt-4">Contoh Struktur HTML</h3>
-                <pre class="bg-light p-3"><code>
+            <h3 class="mt-4">Contoh Struktur HTML</h3>
+            <pre class="bg-light p-3"><code>
 &lt;!DOCTYPE html&gt;
 &lt;html lang="id"&gt;
 &lt;head&gt;
@@ -95,14 +90,14 @@
 &lt;/body&gt;
 &lt;/html&gt;
         </code></pre>
-            </section>
+        </section>
 
-            <section class="mb-5">
-                <h2 class="mb-3">CSS (Cascading Style Sheets)</h2>
-                <p>CSS digunakan untuk mengatur tampilan dan desain halaman web agar lebih menarik dan responsif.</p>
+        <section class="mb-5">
+            <h2 class="mb-3">CSS (Cascading Style Sheets)</h2>
+            <p>CSS digunakan untuk mengatur tampilan dan desain halaman web agar lebih menarik dan responsif.</p>
 
-                <h3 class="mt-4">Contoh CSS</h3>
-                <pre class="bg-light p-3"><code>
+            <h3 class="mt-4">Contoh CSS</h3>
+            <pre class="bg-light p-3"><code>
 body {
     font-family: Arial, sans-serif;
     background-color: #f4f4f4;
@@ -114,28 +109,28 @@ h1 {
     text-align: center;
 }
         </code></pre>
-            </section>
+        </section>
 
-            <section class="mb-5">
-                <h2 class="mb-3">JavaScript</h2>
-                <p>JavaScript adalah bahasa pemrograman yang digunakan untuk membuat halaman web lebih interaktif.</p>
+        <section class="mb-5">
+            <h2 class="mb-3">JavaScript</h2>
+            <p>JavaScript adalah bahasa pemrograman yang digunakan untuk membuat halaman web lebih interaktif.</p>
 
-                <h3 class="mt-4">Contoh JavaScript</h3>
-                <pre class="bg-light p-3"><code>
+            <h3 class="mt-4">Contoh JavaScript</h3>
+            <pre class="bg-light p-3"><code>
 document.addEventListener("DOMContentLoaded", function() {
     document.querySelector("h1").addEventListener("click", function() {
         alert("Anda mengklik judul!");
     });
 });
         </code></pre>
-            </section>
+        </section>
 
-            <section class="mb-5">
-                <h2 class="mb-3">Framework Front-end (React.js, Vue.js)</h2>
-                <p>Framework front-end membantu pengembang dalam membangun antarmuka pengguna dengan lebih cepat dan efisien.</p>
+        <section class="mb-5">
+            <h2 class="mb-3">Framework Front-end (React.js, Vue.js)</h2>
+            <p>Framework front-end membantu pengembang dalam membangun antarmuka pengguna dengan lebih cepat dan efisien.</p>
 
-                <h3 class="mt-4">Contoh React.js</h3>
-                <pre class="bg-light p-3"><code>
+            <h3 class="mt-4">Contoh React.js</h3>
+            <pre class="bg-light p-3"><code>
 import React from 'react';
 
 function App() {
@@ -149,8 +144,8 @@ function App() {
 export default App;
         </code></pre>
 
-                <h3 class="mt-4">Contoh Vue.js</h3>
-                <pre class="bg-light p-3"><code>
+            <h3 class="mt-4">Contoh Vue.js</h3>
+            <pre class="bg-light p-3"><code>
 &lt;template&gt;
   &lt;div&gt;
     &lt;h1&gt;{{ message }}&lt;/h1&gt;
@@ -167,114 +162,114 @@ export default {
 };
 &lt;/script&gt;
         </code></pre>
-            </section>
+        </section>
 
-            <section class="mb-5">
-                <h2 class="mb-3">Framework Back-end (Laravel)</h2>
-                <p>Laravel adalah framework PHP yang digunakan untuk membangun aplikasi web dengan cepat dan aman.</p>
+        <section class="mb-5">
+            <h2 class="mb-3">Framework Back-end (Laravel)</h2>
+            <p>Laravel adalah framework PHP yang digunakan untuk membangun aplikasi web dengan cepat dan aman.</p>
 
-                <h3 class="mt-4">Contoh Routing dalam Laravel</h3>
-                <pre class="bg-light p-3"><code>
+            <h3 class="mt-4">Contoh Routing dalam Laravel</h3>
+            <pre class="bg-light p-3"><code>
 // routes/web.php
 Route::get('/halo', function () {
     return "Halo, ini Laravel!";
 });
         </code></pre>
-            </section>
+        </section>
 
-            <section class="mb-5">
-                <h2 class="mb-3">Kesimpulan</h2>
-                <p>Pemrograman web mencakup banyak teknologi yang dapat digunakan untuk membangun aplikasi web. Dengan memahami
-                    HTML, CSS, dan JavaScript, serta memanfaatkan framework seperti Laravel, React.js, dan Vue.js, pengembang
-                    dapat menciptakan aplikasi web yang modern, responsif, dan efisien.</p>
-            </section>
-        </main>
+        <section class="mb-5">
+            <h2 class="mb-3">Kesimpulan</h2>
+            <p>Pemrograman web mencakup banyak teknologi yang dapat digunakan untuk membangun aplikasi web. Dengan memahami
+                HTML, CSS, dan JavaScript, serta memanfaatkan framework seperti Laravel, React.js, dan Vue.js, pengembang
+                dapat menciptakan aplikasi web yang modern, responsif, dan efisien.</p>
+        </section>
+    </main>
 
 
-        <!-- Footer Start -->
-        <div class="container-fluid bg-primary text-light footer mt-5 pt-5 wow fadeIn" data-wow-delay="0.1s">
-            <div class="container py-5 px-lg-5">
-                <div class="row g-5">
-                    <div class="col-md-6 col-lg-3">
-                        <h5 class="text-white mb-4">Get In Touch</h5>
-                        <p><i class="fa fa-map-marker-alt me-3"></i>Bandar Lampung,Indonesia</p>
-                        <p><i class="fa fa-phone-alt me-3"></i>+62 852 6640 7728</p>
-                        <p><i class="fa fa-envelope me-3"></i>rosdiyanna@gmail.com</p>
-                        <div class="d-flex pt-2">
-                            <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-twitter"></i></a>
-                            <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-facebook-f"></i></a>
-                            <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-youtube"></i></a>
-                            <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-instagram"></i></a>
-                            <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-linkedin-in"></i></a>
+    <!-- Footer Start -->
+    <div class="container-fluid bg-primary text-light footer mt-5 pt-5 wow fadeIn" data-wow-delay="0.1s">
+        <div class="container py-5 px-lg-5">
+            <div class="row g-5">
+                <div class="col-md-6 col-lg-3">
+                    <h5 class="text-white mb-4">Get In Touch</h5>
+                    <p><i class="fa fa-map-marker-alt me-3"></i>Bandar Lampung,Indonesia</p>
+                    <p><i class="fa fa-phone-alt me-3"></i>+62 852 6640 7728</p>
+                    <p><i class="fa fa-envelope me-3"></i>rosdiyanna@gmail.com</p>
+                    <div class="d-flex pt-2">
+                        <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-twitter"></i></a>
+                        <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-facebook-f"></i></a>
+                        <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-youtube"></i></a>
+                        <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-instagram"></i></a>
+                        <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <h5 class="text-white mb-4">Popular Link</h5>
+                    <a class="btn btn-link" href="">About Us</a>
+                    <a class="btn btn-link" href="">Contact Us</a>
+                    <a class="btn btn-link" href="">Privacy Policy</a>
+                    <a class="btn btn-link" href="">Terms & Condition</a>
+                    <a class="btn btn-link" href="">Career</a>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <h5 class="text-white mb-4">Project Gallery</h5>
+                    <div class="row g-2">
+                        <div class="col-4">
+                            <img class="img-fluid" src="img/portfolio-1.jpg" alt="Image">
                         </div>
-                    </div>
-                    <div class="col-md-6 col-lg-3">
-                        <h5 class="text-white mb-4">Popular Link</h5>
-                        <a class="btn btn-link" href="">About Us</a>
-                        <a class="btn btn-link" href="">Contact Us</a>
-                        <a class="btn btn-link" href="">Privacy Policy</a>
-                        <a class="btn btn-link" href="">Terms & Condition</a>
-                        <a class="btn btn-link" href="">Career</a>
-                    </div>
-                    <div class="col-md-6 col-lg-3">
-                        <h5 class="text-white mb-4">Project Gallery</h5>
-                        <div class="row g-2">
-                            <div class="col-4">
-                                <img class="img-fluid" src="img/portfolio-1.jpg" alt="Image">
-                            </div>
-                            <div class="col-4">
-                                <img class="img-fluid" src="img/portfolio-2.jpg" alt="Image">
-                            </div>
-                            <div class="col-4">
-                                <img class="img-fluid" src="img/portfolio-3.jpg" alt="Image">
-                            </div>
-                            <div class="col-4">
-                                <img class="img-fluid" src="img/portfolio-4.jpg" alt="Image">
-                            </div>
-                            <div class="col-4">
-                                <img class="img-fluid" src="img/portfolio-5.jpg" alt="Image">
-                            </div>
-                            <div class="col-4">
-                                <img class="img-fluid" src="img/portfolio-6.jpg" alt="Image">
-                            </div>
+                        <div class="col-4">
+                            <img class="img-fluid" src="img/portfolio-2.jpg" alt="Image">
                         </div>
-                    </div>
-                    <div class="col-md-6 col-lg-3">
-                        <h5 class="text-white mb-4">Newsletter</h5>
-                        <p>Lorem ipsum dolor sit amet elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit non vulpu</p>
-                        <div class="position-relative w-100 mt-3">
-                            <input class="form-control border-0 rounded-pill w-100 ps-4 pe-5" type="text" placeholder="Your Email" style="height: 48px;">
-                            <button type="button" class="btn shadow-none position-absolute top-0 end-0 mt-1 me-2"><i class="fa fa-paper-plane text-primary fs-4"></i></button>
+                        <div class="col-4">
+                            <img class="img-fluid" src="img/portfolio-3.jpg" alt="Image">
+                        </div>
+                        <div class="col-4">
+                            <img class="img-fluid" src="img/portfolio-4.jpg" alt="Image">
+                        </div>
+                        <div class="col-4">
+                            <img class="img-fluid" src="img/portfolio-5.jpg" alt="Image">
+                        </div>
+                        <div class="col-4">
+                            <img class="img-fluid" src="img/portfolio-6.jpg" alt="Image">
                         </div>
                     </div>
                 </div>
+                <div class="col-md-6 col-lg-3">
+                    <h5 class="text-white mb-4">Newsletter</h5>
+                    <p>Lorem ipsum dolor sit amet elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit non vulpu</p>
+                    <div class="position-relative w-100 mt-3">
+                        <input class="form-control border-0 rounded-pill w-100 ps-4 pe-5" type="text" placeholder="Your Email" style="height: 48px;">
+                        <button type="button" class="btn shadow-none position-absolute top-0 end-0 mt-1 me-2"><i class="fa fa-paper-plane text-primary fs-4"></i></button>
+                    </div>
+                </div>
             </div>
-            <div class="container px-lg-5">
-                <div class="copyright">
-                    <div class="row">
-                        <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
-                            &copy; <a class="border-bottom" href="#">Rosdiyanna Safitri</a>, All Right Reserved.
+        </div>
+        <div class="container px-lg-5">
+            <div class="copyright">
+                <div class="row">
+                    <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                        &copy; <a class="border-bottom" href="#">Rosdiyanna Safitri</a>, All Right Reserved.
 
-                            <!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
-                            Designed By <a class="border-bottom" href="https://htmlcodex.com">ROSE</a>
-                        </div>
-                        <div class="col-md-6 text-center text-md-end">
-                            <div class="footer-menu">
-                                <a href="">Home</a>
-                                <a href="">Cookies</a>
-                                <a href="">Help</a>
-                                <a href="">FQAs</a>
-                            </div>
+                        <!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
+                        Designed By <a class="border-bottom" href="https://htmlcodex.com">ROSE</a>
+                    </div>
+                    <div class="col-md-6 text-center text-md-end">
+                        <div class="footer-menu">
+                            <a href="">Home</a>
+                            <a href="">Cookies</a>
+                            <a href="">Help</a>
+                            <a href="">FQAs</a>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <!-- Footer End -->
+    </div>
+    <!-- Footer End -->
 
 
-        <!-- Back to Top -->
-        <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top pt-2"><i class="bi bi-arrow-up"></i></a>
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top pt-2"><i class="bi bi-arrow-up"></i></a>
     </div>
 
     <!-- JavaScript Libraries -->

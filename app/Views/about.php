@@ -30,210 +30,205 @@
                         <a href="<?= route_to('about') ?>" class=" nav-item nav-link active">About</a>
                         <a href="<?= route_to('matapelajaran') ?>" class="nav-item nav-link ">Mata Pelajaran</a>
                         <a href="<?= route_to('forum.index') ?>" class="nav-item nav-link">Forum</a>
-                        <div class="nav-item dropdown">
-                            <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
-                            <div class="dropdown-menu m-0">
-                                <a href="<?= route_to('project') ?>" class="dropdown-item">Project</a>
-                                <a href="<?= route_to('team') ?>" class="dropdown-item">Our Team</a>
-                                <a href="<?= route_to('errors/html/error_404') ?>" class="dropdown-item">404 Page</a>
-                            </div>
-                        </div>
+                        <a href="<?= route_to('project') ?>" class="nav-item nav-link ">Project</a>
                         <a href="<?= route_to('contact') ?>" class="nav-item nav-link">Contact</a>
                     </div>
                 </div>
-            </nav>
+        </div>
+    </div>
+    </nav>
 
-            <div class="container-xxl py-5 bg-primary hero-header mb-5">
-                <div class="container my-5 py-5 px-lg-5">
-                    <div class="row g-5 py-5">
-                        <div class="col-12 text-center">
-                            <h1 class="text-white animated zoomIn">About Us</h1>
-                            <hr class="bg-white mx-auto mt-0" style="width: 90px;">
-                            <nav aria-label="breadcrumb">
-                                <ol class="breadcrumb justify-content-center">
-                                    <li class="breadcrumb-item"><a class="text-white" href="#">Home</a></li>
-                                    <li class="breadcrumb-item"><a class="text-white" href="#">Pages</a></li>
-                                    <li class="breadcrumb-item text-white active" aria-current="page">About</li>
-                                </ol>
-                            </nav>
+    <div class="container-xxl py-5 bg-primary hero-header mb-5">
+        <div class="container my-5 py-5 px-lg-5">
+            <div class="row g-5 py-5">
+                <div class="col-12 text-center">
+                    <h1 class="text-white animated zoomIn">About Us</h1>
+                    <hr class="bg-white mx-auto mt-0" style="width: 90px;">
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb justify-content-center">
+                            <li class="breadcrumb-item"><a class="text-white" href="#">Home</a></li>
+                            <li class="breadcrumb-item"><a class="text-white" href="#">Pages</a></li>
+                            <li class="breadcrumb-item text-white active" aria-current="page">About</li>
+                        </ol>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <!-- Navbar & Hero End -->
+
+
+    <!-- About Start -->
+    <div class="container-xxl py-5">
+        <div class="container px-lg-5">
+            <div class="row g-5">
+                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="section-title position-relative mb-4 pb-2">
+                        <h6 class="position-relative text-primary ps-4">About Us</h6>
+                        <h2 class="mt-2">Selamat Datang di Classify, Platform E-learning yang Didedikasikan untuk Pembelajaran RPL</h2>
+                    </div>
+                    <p class="mb-4">Kami hadir untuk membantu siswa dan guru dalam memahami konsep dan keterampilan yang dibutuhkan di dunia pengembangan perangkat lunak, mulai dari pemrograman, basis data, hingga pengembangan aplikasi berbasis web dan mobile.
+                        Dengan materi yang disusun secara sistematis, kami berkomitmen untuk menciptakan pengalaman belajar yang menyenangkan dan efektif. serta forum diskusi untuk memperdalam pemahamanmu tentang dunia RPL.</p>
+                    <div class="row g-3">
+
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <img class="img-fluid wow zoomIn" data-wow-delay="0.5s" src="img/about.jpg">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- About End -->
+
+    <!-- Team Start -->
+    <div class="container-xxl py-5">
+        <div class="container px-lg-5">
+            <div class="section-title position-relative text-center mb-5 pb-2 wow fadeInUp" data-wow-delay="0.1s">
+                <h6 class="position-relative d-inline text-primary ps-4">Our Team</h6>
+                <h2 class="mt-2">Meet Our Team Members</h2>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-4 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="team-item">
+                        <div class="d-flex">
+                            <div class="flex-shrink-0 d-flex flex-column align-items-center mt-4 pt-5" style="width: 75px;">
+                                <a class="btn btn-square text-primary bg-white my-1" href=""><i class="fab fa-facebook-f"></i></a>
+                                <a class="btn btn-square text-primary bg-white my-1" href=""><i class="fab fa-twitter"></i></a>
+                                <a class="btn btn-square text-primary bg-white my-1" href=""><i class="fab fa-instagram"></i></a>
+                                <a class="btn btn-square text-primary bg-white my-1" href=""><i class="fab fa-linkedin-in"></i></a>
+                            </div>
+                            <img class="img-fluid rounded w-100" src="img/team-1.jpg" alt="">
+                        </div>
+                        <div class="px-4 py-3">
+                            <h5 class="fw-bold m-0">Jhon Doe</h5>
+                            <small>CEO</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="team-item">
+                        <div class="d-flex">
+                            <div class="flex-shrink-0 d-flex flex-column align-items-center mt-4 pt-5" style="width: 75px;">
+                                <a class="btn btn-square text-primary bg-white my-1" href=""><i class="fab fa-facebook-f"></i></a>
+                                <a class="btn btn-square text-primary bg-white my-1" href=""><i class="fab fa-twitter"></i></a>
+                                <a class="btn btn-square text-primary bg-white my-1" href=""><i class="fab fa-instagram"></i></a>
+                                <a class="btn btn-square text-primary bg-white my-1" href=""><i class="fab fa-linkedin-in"></i></a>
+                            </div>
+                            <img class="img-fluid rounded w-100" src="img/team-2.jpg" alt="">
+                        </div>
+                        <div class="px-4 py-3">
+                            <h5 class="fw-bold m-0">Emma William</h5>
+                            <small>Manager</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 wow fadeInUp" data-wow-delay="0.6s">
+                    <div class="team-item">
+                        <div class="d-flex">
+                            <div class="flex-shrink-0 d-flex flex-column align-items-center mt-4 pt-5" style="width: 75px;">
+                                <a class="btn btn-square text-primary bg-white my-1" href=""><i class="fab fa-facebook-f"></i></a>
+                                <a class="btn btn-square text-primary bg-white my-1" href=""><i class="fab fa-twitter"></i></a>
+                                <a class="btn btn-square text-primary bg-white my-1" href=""><i class="fab fa-instagram"></i></a>
+                                <a class="btn btn-square text-primary bg-white my-1" href=""><i class="fab fa-linkedin-in"></i></a>
+                            </div>
+                            <img class="img-fluid rounded w-100" src="img/team-3.jpg" alt="">
+                        </div>
+                        <div class="px-4 py-3">
+                            <h5 class="fw-bold m-0">Noah Michael</h5>
+                            <small>Designer</small>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <!-- Navbar & Hero End -->
+    </div>
+    <!-- Team End -->
 
 
-        <!-- About Start -->
-        <div class="container-xxl py-5">
-            <div class="container px-lg-5">
-                <div class="row g-5">
-                    <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
-                        <div class="section-title position-relative mb-4 pb-2">
-                            <h6 class="position-relative text-primary ps-4">About Us</h6>
-                            <h2 class="mt-2">Selamat Datang di Classify, Platform E-learning yang Didedikasikan untuk Pembelajaran RPL</h2>
+    <!-- Footer Start -->
+    <div class="container-fluid bg-primary text-light footer mt-5 pt-5 wow fadeIn" data-wow-delay="0.1s">
+        <div class="container py-5 px-lg-5">
+            <div class="row g-5">
+                <div class="col-md-6 col-lg-3">
+                    <h5 class="text-white mb-4">Get In Touch</h5>
+                    <p><i class="fa fa-map-marker-alt me-3"></i>Bandar Lampung,Indonesia</p>
+                    <p><i class="fa fa-phone-alt me-3"></i>+62 852 6640 7728</p>
+                    <p><i class="fa fa-envelope me-3"></i>rosdiyanna@gmail.com</p>
+                    <div class="d-flex pt-2">
+                        <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-twitter"></i></a>
+                        <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-facebook-f"></i></a>
+                        <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-youtube"></i></a>
+                        <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-instagram"></i></a>
+                        <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <h5 class="text-white mb-4">Popular Link</h5>
+                    <a class="btn btn-link" href="">About Us</a>
+                    <a class="btn btn-link" href="">Contact Us</a>
+                    <a class="btn btn-link" href="">Privacy Policy</a>
+                    <a class="btn btn-link" href="">Terms & Condition</a>
+                    <a class="btn btn-link" href="">Career</a>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <h5 class="text-white mb-4">Project Gallery</h5>
+                    <div class="row g-2">
+                        <div class="col-4">
+                            <img class="img-fluid" src="img/portfolio-1.jpg" alt="Image">
                         </div>
-                        <p class="mb-4">Kami hadir untuk membantu siswa dan guru dalam memahami konsep dan keterampilan yang dibutuhkan di dunia pengembangan perangkat lunak, mulai dari pemrograman, basis data, hingga pengembangan aplikasi berbasis web dan mobile.
-                            Dengan materi yang disusun secara sistematis, kami berkomitmen untuk menciptakan pengalaman belajar yang menyenangkan dan efektif. serta forum diskusi untuk memperdalam pemahamanmu tentang dunia RPL.</p>
-                        <div class="row g-3">
-
+                        <div class="col-4">
+                            <img class="img-fluid" src="img/portfolio-2.jpg" alt="Image">
+                        </div>
+                        <div class="col-4">
+                            <img class="img-fluid" src="img/portfolio-3.jpg" alt="Image">
+                        </div>
+                        <div class="col-4">
+                            <img class="img-fluid" src="img/portfolio-4.jpg" alt="Image">
+                        </div>
+                        <div class="col-4">
+                            <img class="img-fluid" src="img/portfolio-5.jpg" alt="Image">
+                        </div>
+                        <div class="col-4">
+                            <img class="img-fluid" src="img/portfolio-6.jpg" alt="Image">
                         </div>
                     </div>
-                    <div class="col-lg-6">
-                        <img class="img-fluid wow zoomIn" data-wow-delay="0.5s" src="img/about.jpg">
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <h5 class="text-white mb-4">Newsletter</h5>
+                    <p>Lorem ipsum dolor sit amet elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit non vulpu</p>
+                    <div class="position-relative w-100 mt-3">
+                        <input class="form-control border-0 rounded-pill w-100 ps-4 pe-5" type="text" placeholder="Your Email" style="height: 48px;">
+                        <button type="button" class="btn shadow-none position-absolute top-0 end-0 mt-1 me-2"><i class="fa fa-paper-plane text-primary fs-4"></i></button>
                     </div>
                 </div>
             </div>
         </div>
-        <!-- About End -->
-
-        <!-- Team Start -->
-        <div class="container-xxl py-5">
-            <div class="container px-lg-5">
-                <div class="section-title position-relative text-center mb-5 pb-2 wow fadeInUp" data-wow-delay="0.1s">
-                    <h6 class="position-relative d-inline text-primary ps-4">Our Team</h6>
-                    <h2 class="mt-2">Meet Our Team Members</h2>
-                </div>
-                <div class="row g-4">
-                    <div class="col-lg-4 wow fadeInUp" data-wow-delay="0.1s">
-                        <div class="team-item">
-                            <div class="d-flex">
-                                <div class="flex-shrink-0 d-flex flex-column align-items-center mt-4 pt-5" style="width: 75px;">
-                                    <a class="btn btn-square text-primary bg-white my-1" href=""><i class="fab fa-facebook-f"></i></a>
-                                    <a class="btn btn-square text-primary bg-white my-1" href=""><i class="fab fa-twitter"></i></a>
-                                    <a class="btn btn-square text-primary bg-white my-1" href=""><i class="fab fa-instagram"></i></a>
-                                    <a class="btn btn-square text-primary bg-white my-1" href=""><i class="fab fa-linkedin-in"></i></a>
-                                </div>
-                                <img class="img-fluid rounded w-100" src="img/team-1.jpg" alt="">
-                            </div>
-                            <div class="px-4 py-3">
-                                <h5 class="fw-bold m-0">Jhon Doe</h5>
-                                <small>CEO</small>
-                            </div>
-                        </div>
+        <div class="container px-lg-5">
+            <div class="copyright">
+                <div class="row">
+                    <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                        &copy; <a class="border-bottom text-light" href="#">Rosdiyanna Safitri</a>, All Right Reserved.
+                        Designed By <a class="border-bottom text-light" href="https://htmlcodex.com">ROSE</a>
                     </div>
-                    <div class="col-lg-4 wow fadeInUp" data-wow-delay="0.3s">
-                        <div class="team-item">
-                            <div class="d-flex">
-                                <div class="flex-shrink-0 d-flex flex-column align-items-center mt-4 pt-5" style="width: 75px;">
-                                    <a class="btn btn-square text-primary bg-white my-1" href=""><i class="fab fa-facebook-f"></i></a>
-                                    <a class="btn btn-square text-primary bg-white my-1" href=""><i class="fab fa-twitter"></i></a>
-                                    <a class="btn btn-square text-primary bg-white my-1" href=""><i class="fab fa-instagram"></i></a>
-                                    <a class="btn btn-square text-primary bg-white my-1" href=""><i class="fab fa-linkedin-in"></i></a>
-                                </div>
-                                <img class="img-fluid rounded w-100" src="img/team-2.jpg" alt="">
-                            </div>
-                            <div class="px-4 py-3">
-                                <h5 class="fw-bold m-0">Emma William</h5>
-                                <small>Manager</small>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 wow fadeInUp" data-wow-delay="0.6s">
-                        <div class="team-item">
-                            <div class="d-flex">
-                                <div class="flex-shrink-0 d-flex flex-column align-items-center mt-4 pt-5" style="width: 75px;">
-                                    <a class="btn btn-square text-primary bg-white my-1" href=""><i class="fab fa-facebook-f"></i></a>
-                                    <a class="btn btn-square text-primary bg-white my-1" href=""><i class="fab fa-twitter"></i></a>
-                                    <a class="btn btn-square text-primary bg-white my-1" href=""><i class="fab fa-instagram"></i></a>
-                                    <a class="btn btn-square text-primary bg-white my-1" href=""><i class="fab fa-linkedin-in"></i></a>
-                                </div>
-                                <img class="img-fluid rounded w-100" src="img/team-3.jpg" alt="">
-                            </div>
-                            <div class="px-4 py-3">
-                                <h5 class="fw-bold m-0">Noah Michael</h5>
-                                <small>Designer</small>
-                            </div>
+                    <div class="col-md-6 text-center text-md-end">
+                        <div class="footer-menu">
+                            <a href="">Home</a>
+                            <a href="">Cookies</a>
+                            <a href="">Help</a>
+                            <a href="">FQAs</a>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <!-- Team End -->
+    </div>
+    <!-- Footer End -->
 
 
-        <!-- Footer Start -->
-        <div class="container-fluid bg-primary text-light footer mt-5 pt-5 wow fadeIn" data-wow-delay="0.1s">
-            <div class="container py-5 px-lg-5">
-                <div class="row g-5">
-                    <div class="col-md-6 col-lg-3">
-                        <h5 class="text-white mb-4">Get In Touch</h5>
-                        <p><i class="fa fa-map-marker-alt me-3"></i>Bandar Lampung,Indonesia</p>
-                        <p><i class="fa fa-phone-alt me-3"></i>+62 852 6640 7728</p>
-                        <p><i class="fa fa-envelope me-3"></i>rosdiyanna@gmail.com</p>
-                        <div class="d-flex pt-2">
-                            <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-twitter"></i></a>
-                            <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-facebook-f"></i></a>
-                            <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-youtube"></i></a>
-                            <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-instagram"></i></a>
-                            <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-linkedin-in"></i></a>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-3">
-                        <h5 class="text-white mb-4">Popular Link</h5>
-                        <a class="btn btn-link" href="">About Us</a>
-                        <a class="btn btn-link" href="">Contact Us</a>
-                        <a class="btn btn-link" href="">Privacy Policy</a>
-                        <a class="btn btn-link" href="">Terms & Condition</a>
-                        <a class="btn btn-link" href="">Career</a>
-                    </div>
-                    <div class="col-md-6 col-lg-3">
-                        <h5 class="text-white mb-4">Project Gallery</h5>
-                        <div class="row g-2">
-                            <div class="col-4">
-                                <img class="img-fluid" src="img/portfolio-1.jpg" alt="Image">
-                            </div>
-                            <div class="col-4">
-                                <img class="img-fluid" src="img/portfolio-2.jpg" alt="Image">
-                            </div>
-                            <div class="col-4">
-                                <img class="img-fluid" src="img/portfolio-3.jpg" alt="Image">
-                            </div>
-                            <div class="col-4">
-                                <img class="img-fluid" src="img/portfolio-4.jpg" alt="Image">
-                            </div>
-                            <div class="col-4">
-                                <img class="img-fluid" src="img/portfolio-5.jpg" alt="Image">
-                            </div>
-                            <div class="col-4">
-                                <img class="img-fluid" src="img/portfolio-6.jpg" alt="Image">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-3">
-                        <h5 class="text-white mb-4">Newsletter</h5>
-                        <p>Lorem ipsum dolor sit amet elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit non vulpu</p>
-                        <div class="position-relative w-100 mt-3">
-                            <input class="form-control border-0 rounded-pill w-100 ps-4 pe-5" type="text" placeholder="Your Email" style="height: 48px;">
-                            <button type="button" class="btn shadow-none position-absolute top-0 end-0 mt-1 me-2"><i class="fa fa-paper-plane text-primary fs-4"></i></button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="container px-lg-5">
-                <div class="copyright">
-                    <div class="row">
-                        <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
-                            &copy; <a class="border-bottom text-light" href="#">Rosdiyanna Safitri</a>, All Right Reserved.
-                            Designed By <a class="border-bottom text-light" href="https://htmlcodex.com">ROSE</a>
-                        </div>
-                        <div class="col-md-6 text-center text-md-end">
-                            <div class="footer-menu">
-                                <a href="">Home</a>
-                                <a href="">Cookies</a>
-                                <a href="">Help</a>
-                                <a href="">FQAs</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Footer End -->
-
-
-        <!-- Back to Top -->
-        <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top pt-2"><i class="bi bi-arrow-up"></i></a>
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top pt-2"><i class="bi bi-arrow-up"></i></a>
     </div>
 
     <!-- JavaScript Libraries -->

@@ -30,14 +30,7 @@
                         <a href="<?= route_to('about') ?>" class=" nav-item nav-link ">About</a>
                         <a href="<?= route_to('matapelajaran') ?>" class="nav-item nav-link ">Mata Pelajaran</a>
                         <a href="<?= route_to('forum.index') ?>" class="nav-item nav-link active">Forum</a>
-                        <div class="nav-item dropdown">
-                            <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
-                            <div class="dropdown-menu m-0">
-                                <a href="<?= route_to('project') ?>" class="dropdown-item">Project</a>
-                                <a href="<?= route_to('team') ?>" class="dropdown-item">Our Team</a>
-                                <a href="<?= route_to('errors/html/error_404') ?>" class="dropdown-item">404 Page</a>
-                            </div>
-                        </div>
+                        <a href="<?= route_to('project') ?>" class="nav-item nav-link ">Project</a>
                         <a href="<?= route_to('contact') ?>" class="nav-item nav-link">Contact</a>
                     </div>
                 </div>
