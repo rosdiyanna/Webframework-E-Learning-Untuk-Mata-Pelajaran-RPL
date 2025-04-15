@@ -34,46 +34,44 @@
                         <a href="<?= route_to('contact') ?>" class="nav-item nav-link">Contact</a>
                     </div>
                 </div>
-        </div>
-    </div>
-    </nav>
+            </nav>
 
-    <div class="container-xxl py-5 bg-primary hero-header mb-5">
-        <div class="container my-5 py-5 px-lg-5">
-            <div class="row g-5 py-5">
-                <div class="col-12 text-center">
-                    <h1 class="text-white animated zoomIn">Materi Administrasi Sistem Jaringan</h1>
-                    <hr class="bg-white mx-auto mt-0" style="width: 90px;">
-                    <nav aria-label="breadcrumb">
-                        <ol class="breadcrumb justify-content-center">
-                            <li class="breadcrumb-item"><a class="text-white" href="<?= route_to('home') ?>">Home</a></li>
-                            <li class="breadcrumb-item"><a class="text-white" href="<?= route_to('matapelajaran') ?>">Mapel</a></li>
-                            <li class="breadcrumb-item text-white active" aria-current="page">Materi</li>
-                        </ol>
-                    </nav>
+            <div class="container-xxl py-5 bg-primary hero-header mb-5">
+                <div class="container my-5 py-5 px-lg-5">
+                    <div class="row g-5 py-5">
+                        <div class="col-12 text-center">
+                            <h1 class="text-white animated zoomIn">Materi Administrasi Sistem Jaringan</h1>
+                            <hr class="bg-white mx-auto mt-0" style="width: 90px;">
+                            <nav aria-label="breadcrumb">
+                                <ol class="breadcrumb justify-content-center">
+                                    <li class="breadcrumb-item"><a class="text-white" href="<?= route_to('home') ?>">Home</a></li>
+                                    <li class="breadcrumb-item"><a class="text-white" href="<?= route_to('matapelajaran') ?>">Mapel</a></li>
+                                    <li class="breadcrumb-item text-white active" aria-current="page">Materi</li>
+                                </ol>
+                            </nav>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-    </div>
-    <!-- Navbar & Hero End -->
+        <!-- Navbar & Hero End -->
 
-    <main class="container px-4 px-lg-5 py-5">
-        <section class="mb-5">
-            <h2 class="mb-3">Pengelolaan Sistem Operasi Server</h2>
-            <p>Pada administrasi sistem jaringan, pengelolaan sistem operasi server menjadi aspek penting dalam mendukung
-                layanan jaringan. Sistem operasi server yang umum digunakan adalah Linux dan Windows Server.</p>
+        <main class="container px-4 px-lg-5 py-5">
+            <section class="mb-5">
+                <h2 class="mb-3">Pengelolaan Sistem Operasi Server</h2>
+                <p>Pada administrasi sistem jaringan, pengelolaan sistem operasi server menjadi aspek penting dalam mendukung
+                    layanan jaringan. Sistem operasi server yang umum digunakan adalah Linux dan Windows Server.</p>
 
-            <h3 class="mt-4">1. Linux Server</h3>
-            <p>Linux Server digunakan secara luas karena stabilitas dan keamanannya. Beberapa distribusi Linux yang populer untuk server:</p>
-            <ul>
-                <li><strong>Ubuntu Server</strong> – Cocok untuk pemula, banyak digunakan dalam lingkungan cloud.</li>
-                <li><strong>CentOS/Rocky Linux</strong> – Stabil dan banyak digunakan dalam perusahaan.</li>
-                <li><strong>Debian</strong> – Ringan dan efisien untuk server.</li>
-            </ul>
+                <h3 class="mt-4">1. Linux Server</h3>
+                <p>Linux Server digunakan secara luas karena stabilitas dan keamanannya. Beberapa distribusi Linux yang populer untuk server:</p>
+                <ul>
+                    <li><strong>Ubuntu Server</strong> – Cocok untuk pemula, banyak digunakan dalam lingkungan cloud.</li>
+                    <li><strong>CentOS/Rocky Linux</strong> – Stabil dan banyak digunakan dalam perusahaan.</li>
+                    <li><strong>Debian</strong> – Ringan dan efisien untuk server.</li>
+                </ul>
 
-            <h4>Perintah Dasar Linux Server:</h4>
-            <pre class="bg-light p-3"><code>
+                <h4>Perintah Dasar Linux Server:</h4>
+                <pre class="bg-light p-3"><code>
 # Update sistem
 sudo apt update && sudo apt upgrade -y
 
@@ -84,49 +82,49 @@ systemctl status apache2
 sudo adduser nama_user
         </code></pre>
 
-            <h3 class="mt-4">2. Windows Server</h3>
-            <p>Windows Server digunakan dalam berbagai organisasi yang mengandalkan teknologi Microsoft, seperti Active Directory dan layanan berbasis GUI.</p>
-            <ul>
-                <li><strong>Windows Server 2019/2022</strong> – Mendukung virtualisasi, Active Directory, dan berbagai layanan jaringan.</li>
-                <li><strong>Active Directory</strong> – Digunakan untuk mengelola user dan komputer dalam jaringan.</li>
-                <li><strong>PowerShell</strong> – Digunakan untuk administrasi berbasis perintah.</li>
-            </ul>
+                <h3 class="mt-4">2. Windows Server</h3>
+                <p>Windows Server digunakan dalam berbagai organisasi yang mengandalkan teknologi Microsoft, seperti Active Directory dan layanan berbasis GUI.</p>
+                <ul>
+                    <li><strong>Windows Server 2019/2022</strong> – Mendukung virtualisasi, Active Directory, dan berbagai layanan jaringan.</li>
+                    <li><strong>Active Directory</strong> – Digunakan untuk mengelola user dan komputer dalam jaringan.</li>
+                    <li><strong>PowerShell</strong> – Digunakan untuk administrasi berbasis perintah.</li>
+                </ul>
 
-            <h4>Contoh Perintah PowerShell:</h4>
-            <pre class="bg-light p-3"><code>
+                <h4>Contoh Perintah PowerShell:</h4>
+                <pre class="bg-light p-3"><code>
 # Melihat daftar pengguna
 Get-ADUser -Filter *
 
 # Membuat pengguna baru
 New-ADUser -Name "UserBaru" -SamAccountName UserBaru -UserPrincipalName UserBaru@domain.local
         </code></pre>
-        </section>
+            </section>
 
-        <section class="mb-5">
-            <h2 class="mb-3">Jaringan Komputer Dasar</h2>
-            <p>Jaringan komputer adalah sistem yang menghubungkan berbagai perangkat untuk berbagi data dan sumber daya.</p>
+            <section class="mb-5">
+                <h2 class="mb-3">Jaringan Komputer Dasar</h2>
+                <p>Jaringan komputer adalah sistem yang menghubungkan berbagai perangkat untuk berbagi data dan sumber daya.</p>
 
-            <h3 class="mt-4">1. Topologi Jaringan</h3>
-            <p>Beberapa jenis topologi jaringan yang umum digunakan:</p>
-            <ul>
-                <li><strong>Topologi Bus</strong> – Menggunakan satu jalur utama untuk komunikasi.</li>
-                <li><strong>Topologi Star</strong> – Setiap perangkat terhubung ke satu titik pusat.</li>
-                <li><strong>Topologi Mesh</strong> – Semua perangkat terhubung satu sama lain.</li>
-            </ul>
+                <h3 class="mt-4">1. Topologi Jaringan</h3>
+                <p>Beberapa jenis topologi jaringan yang umum digunakan:</p>
+                <ul>
+                    <li><strong>Topologi Bus</strong> – Menggunakan satu jalur utama untuk komunikasi.</li>
+                    <li><strong>Topologi Star</strong> – Setiap perangkat terhubung ke satu titik pusat.</li>
+                    <li><strong>Topologi Mesh</strong> – Semua perangkat terhubung satu sama lain.</li>
+                </ul>
 
-            <h3 class="mt-4">2. Perangkat Jaringan</h3>
-            <p>Dalam sebuah jaringan, terdapat beberapa perangkat utama:</p>
-            <ul>
-                <li><strong>Router</strong> – Menghubungkan berbagai jaringan dan meneruskan paket data.</li>
-                <li><strong>Switch</strong> – Menghubungkan beberapa perangkat dalam satu jaringan lokal (LAN).</li>
-                <li><strong>Firewall</strong> – Menyaring lalu lintas data dan meningkatkan keamanan jaringan.</li>
-            </ul>
+                <h3 class="mt-4">2. Perangkat Jaringan</h3>
+                <p>Dalam sebuah jaringan, terdapat beberapa perangkat utama:</p>
+                <ul>
+                    <li><strong>Router</strong> – Menghubungkan berbagai jaringan dan meneruskan paket data.</li>
+                    <li><strong>Switch</strong> – Menghubungkan beberapa perangkat dalam satu jaringan lokal (LAN).</li>
+                    <li><strong>Firewall</strong> – Menyaring lalu lintas data dan meningkatkan keamanan jaringan.</li>
+                </ul>
 
-            <h3 class="mt-4">3. Konfigurasi Jaringan Dasar</h3>
-            <p>Berikut adalah contoh konfigurasi IP statis di Linux dan Windows:</p>
+                <h3 class="mt-4">3. Konfigurasi Jaringan Dasar</h3>
+                <p>Berikut adalah contoh konfigurasi IP statis di Linux dan Windows:</p>
 
-            <h4>Konfigurasi IP Statis di Linux</h4>
-            <pre class="bg-light p-3"><code>
+                <h4>Konfigurasi IP Statis di Linux</h4>
+                <pre class="bg-light p-3"><code>
 # Edit file konfigurasi jaringan
 sudo nano /etc/netplan/01-netcfg.yaml
 
@@ -147,22 +145,22 @@ network:
 sudo netplan apply
         </code></pre>
 
-            <h4>Konfigurasi IP Statis di Windows</h4>
-            <pre class="bg-light p-3"><code>
+                <h4>Konfigurasi IP Statis di Windows</h4>
+                <pre class="bg-light p-3"><code>
 # Mengatur IP statis menggunakan PowerShell
 New-NetIPAddress -InterfaceAlias "Ethernet" -IPAddress 192.168.1.100 -PrefixLength 24 -DefaultGateway 192.168.1.1
         </code></pre>
-        </section>
+            </section>
 
-        <section class="mb-5">
-            <h2 class="mb-3">Keamanan Sistem</h2>
-            <p>Keamanan sistem sangat penting dalam administrasi jaringan untuk melindungi data dan infrastruktur dari ancaman siber.</p>
+            <section class="mb-5">
+                <h2 class="mb-3">Keamanan Sistem</h2>
+                <p>Keamanan sistem sangat penting dalam administrasi jaringan untuk melindungi data dan infrastruktur dari ancaman siber.</p>
 
-            <h3 class="mt-4">1. Firewall</h3>
-            <p>Firewall berfungsi sebagai penghalang antara jaringan internal dan eksternal.</p>
+                <h3 class="mt-4">1. Firewall</h3>
+                <p>Firewall berfungsi sebagai penghalang antara jaringan internal dan eksternal.</p>
 
-            <h4>Konfigurasi Firewall di Linux</h4>
-            <pre class="bg-light p-3"><code>
+                <h4>Konfigurasi Firewall di Linux</h4>
+                <pre class="bg-light p-3"><code>
 # Cek status firewall
 sudo ufw status
 
@@ -176,18 +174,18 @@ sudo ufw allow 22/tcp
 sudo ufw default deny incoming
         </code></pre>
 
-            <h3 class="mt-4">2. Enkripsi dan Autentikasi</h3>
-            <p>Untuk mengamankan komunikasi, enkripsi dan autentikasi sangat diperlukan:</p>
-            <ul>
-                <li><strong>SSL/TLS</strong> – Digunakan untuk mengamankan komunikasi web.</li>
-                <li><strong>VPN (Virtual Private Network)</strong> – Digunakan untuk komunikasi aman dalam jaringan.</li>
-            </ul>
+                <h3 class="mt-4">2. Enkripsi dan Autentikasi</h3>
+                <p>Untuk mengamankan komunikasi, enkripsi dan autentikasi sangat diperlukan:</p>
+                <ul>
+                    <li><strong>SSL/TLS</strong> – Digunakan untuk mengamankan komunikasi web.</li>
+                    <li><strong>VPN (Virtual Private Network)</strong> – Digunakan untuk komunikasi aman dalam jaringan.</li>
+                </ul>
 
-            <h3 class="mt-4">3. Manajemen Pengguna dan Hak Akses</h3>
-            <p>Mengelola pengguna dengan hak akses yang tepat sangat penting dalam menjaga keamanan sistem.</p>
+                <h3 class="mt-4">3. Manajemen Pengguna dan Hak Akses</h3>
+                <p>Mengelola pengguna dengan hak akses yang tepat sangat penting dalam menjaga keamanan sistem.</p>
 
-            <h4>Menambah Pengguna dengan Hak Akses di Linux</h4>
-            <pre class="bg-light p-3"><code>
+                <h4>Menambah Pengguna dengan Hak Akses di Linux</h4>
+                <pre class="bg-light p-3"><code>
 # Menambah user baru
 sudo adduser nama_user
 
@@ -195,98 +193,98 @@ sudo adduser nama_user
 sudo usermod -aG sudo nama_user
         </code></pre>
 
-            <h4>Menambah Pengguna dengan Hak Akses di Windows</h4>
-            <pre class="bg-light p-3"><code>
+                <h4>Menambah Pengguna dengan Hak Akses di Windows</h4>
+                <pre class="bg-light p-3"><code>
 # Menambahkan user ke grup Administrator di PowerShell
 Add-LocalGroupMember -Group "Administrators" -Member "UserBaru"
         </code></pre>
-        </section>
-    </main>
+            </section>
+        </main>
 
-    <!-- Footer Start -->
-    <div class="container-fluid bg-primary text-light footer mt-5 pt-5 wow fadeIn" data-wow-delay="0.1s">
-        <div class="container py-5 px-lg-5">
-            <div class="row g-5">
-                <div class="col-md-6 col-lg-3">
-                    <h5 class="text-white mb-4">Get In Touch</h5>
-                    <p><i class="fa fa-map-marker-alt me-3"></i>Bandar Lampung,Indonesia</p>
-                    <p><i class="fa fa-phone-alt me-3"></i>+62 852 6640 7728</p>
-                    <p><i class="fa fa-envelope me-3"></i>rosdiyanna@gmail.com</p>
-                    <div class="d-flex pt-2">
-                        <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-twitter"></i></a>
-                        <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-facebook-f"></i></a>
-                        <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-youtube"></i></a>
-                        <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-instagram"></i></a>
-                        <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-linkedin-in"></i></a>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-3">
-                    <h5 class="text-white mb-4">Popular Link</h5>
-                    <a class="btn btn-link" href="">About Us</a>
-                    <a class="btn btn-link" href="">Contact Us</a>
-                    <a class="btn btn-link" href="">Privacy Policy</a>
-                    <a class="btn btn-link" href="">Terms & Condition</a>
-                    <a class="btn btn-link" href="">Career</a>
-                </div>
-                <div class="col-md-6 col-lg-3">
-                    <h5 class="text-white mb-4">Project Gallery</h5>
-                    <div class="row g-2">
-                        <div class="col-4">
-                            <img class="img-fluid" src="img/portfolio-1.jpg" alt="Image">
-                        </div>
-                        <div class="col-4">
-                            <img class="img-fluid" src="img/portfolio-2.jpg" alt="Image">
-                        </div>
-                        <div class="col-4">
-                            <img class="img-fluid" src="img/portfolio-3.jpg" alt="Image">
-                        </div>
-                        <div class="col-4">
-                            <img class="img-fluid" src="img/portfolio-4.jpg" alt="Image">
-                        </div>
-                        <div class="col-4">
-                            <img class="img-fluid" src="img/portfolio-5.jpg" alt="Image">
-                        </div>
-                        <div class="col-4">
-                            <img class="img-fluid" src="img/portfolio-6.jpg" alt="Image">
+        <!-- Footer Start -->
+        <div class="container-fluid bg-primary text-light footer mt-5 pt-5 wow fadeIn" data-wow-delay="0.1s">
+            <div class="container py-5 px-lg-5">
+                <div class="row g-5">
+                    <div class="col-md-6 col-lg-3">
+                        <h5 class="text-white mb-4">Get In Touch</h5>
+                        <p><i class="fa fa-map-marker-alt me-3"></i>Bandar Lampung,Indonesia</p>
+                        <p><i class="fa fa-phone-alt me-3"></i>+62 852 6640 7728</p>
+                        <p><i class="fa fa-envelope me-3"></i>rosdiyanna@gmail.com</p>
+                        <div class="d-flex pt-2">
+                            <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-twitter"></i></a>
+                            <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-facebook-f"></i></a>
+                            <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-youtube"></i></a>
+                            <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-instagram"></i></a>
+                            <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-linkedin-in"></i></a>
                         </div>
                     </div>
-                </div>
-                <div class="col-md-6 col-lg-3">
-                    <h5 class="text-white mb-4">Newsletter</h5>
-                    <p>Lorem ipsum dolor sit amet elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit non vulpu</p>
-                    <div class="position-relative w-100 mt-3">
-                        <input class="form-control border-0 rounded-pill w-100 ps-4 pe-5" type="text" placeholder="Your Email" style="height: 48px;">
-                        <button type="button" class="btn shadow-none position-absolute top-0 end-0 mt-1 me-2"><i class="fa fa-paper-plane text-primary fs-4"></i></button>
+                    <div class="col-md-6 col-lg-3">
+                        <h5 class="text-white mb-4">Popular Link</h5>
+                        <a class="btn btn-link" href="">About Us</a>
+                        <a class="btn btn-link" href="">Contact Us</a>
+                        <a class="btn btn-link" href="">Privacy Policy</a>
+                        <a class="btn btn-link" href="">Terms & Condition</a>
+                        <a class="btn btn-link" href="">Career</a>
                     </div>
-                </div>
-            </div>
-        </div>
-        <div class="container px-lg-5">
-            <div class="copyright">
-                <div class="row">
-                    <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
-                        &copy; <a class="border-bottom" href="#">Rosdiyanna Safitri</a>, All Right Reserved.
-
-                        <!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
-                        Designed By <a class="border-bottom" href="https://htmlcodex.com">ROSE</a>
+                    <div class="col-md-6 col-lg-3">
+                        <h5 class="text-white mb-4">Project Gallery</h5>
+                        <div class="row g-2">
+                            <div class="col-4">
+                                <img class="img-fluid" src="img/portfolio-1.jpg" alt="Image">
+                            </div>
+                            <div class="col-4">
+                                <img class="img-fluid" src="img/portfolio-2.jpg" alt="Image">
+                            </div>
+                            <div class="col-4">
+                                <img class="img-fluid" src="img/portfolio-3.jpg" alt="Image">
+                            </div>
+                            <div class="col-4">
+                                <img class="img-fluid" src="img/portfolio-4.jpg" alt="Image">
+                            </div>
+                            <div class="col-4">
+                                <img class="img-fluid" src="img/portfolio-5.jpg" alt="Image">
+                            </div>
+                            <div class="col-4">
+                                <img class="img-fluid" src="img/portfolio-6.jpg" alt="Image">
+                            </div>
+                        </div>
                     </div>
-                    <div class="col-md-6 text-center text-md-end">
-                        <div class="footer-menu">
-                            <a href="">Home</a>
-                            <a href="">Cookies</a>
-                            <a href="">Help</a>
-                            <a href="">FQAs</a>
+                    <div class="col-md-6 col-lg-3">
+                        <h5 class="text-white mb-4">Newsletter</h5>
+                        <p>Lorem ipsum dolor sit amet elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit non vulpu</p>
+                        <div class="position-relative w-100 mt-3">
+                            <input class="form-control border-0 rounded-pill w-100 ps-4 pe-5" type="text" placeholder="Your Email" style="height: 48px;">
+                            <button type="button" class="btn shadow-none position-absolute top-0 end-0 mt-1 me-2"><i class="fa fa-paper-plane text-primary fs-4"></i></button>
                         </div>
                     </div>
                 </div>
             </div>
+            <div class="container px-lg-5">
+                <div class="copyright">
+                    <div class="row">
+                        <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                            &copy; <a class="border-bottom" href="#">Rosdiyanna Safitri</a>, All Right Reserved.
+
+                            <!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
+                            Designed By <a class="border-bottom" href="https://htmlcodex.com">ROSE</a>
+                        </div>
+                        <div class="col-md-6 text-center text-md-end">
+                            <div class="footer-menu">
+                                <a href="">Home</a>
+                                <a href="">Cookies</a>
+                                <a href="">Help</a>
+                                <a href="">FQAs</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-    </div>
-    <!-- Footer End -->
+        <!-- Footer End -->
 
 
-    <!-- Back to Top -->
-    <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top pt-2"><i class="bi bi-arrow-up"></i></a>
+        <!-- Back to Top -->
+        <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top pt-2"><i class="bi bi-arrow-up"></i></a>
     </div>
 
     <!-- JavaScript Libraries -->
