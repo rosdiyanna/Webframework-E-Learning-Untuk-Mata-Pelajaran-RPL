@@ -239,6 +239,36 @@
 
     <!-- Template Javascript -->
     <script src="<?= base_url('js/main.js') ?>"></script>
+    <!-- JavaScript for Search -->
+    <script>
+        // Get the search input and search icon elements
+        const searchInput = document.getElementById('searchInput');
+        const searchIcon = document.getElementById('searchIcon');
+
+        // Function to filter mata pelajaran based on search input
+        function searchMataPelajaran() {
+            const keyword = searchInput.value.toLowerCase(); // Get the search term
+            const pelajaranItems = document.querySelectorAll('.mata-pelajaran');
+
+            pelajaranItems.forEach(item => {
+                const title = item.querySelector('h5').textContent.toLowerCase();
+                const description = item.querySelector('p').textContent.toLowerCase();
+
+                // If keyword matches title or description, display the item; otherwise, hide it
+                if (title.includes(keyword) || description.includes(keyword)) {
+                    item.style.display = 'block';
+                } else {
+                    item.style.display = 'none';
+                }
+            });
+        }
+
+        // Add event listener to the search icon for search functionality
+        searchIcon.addEventListener('click', searchMataPelajaran);
+
+        // Add event listener to input field to trigger search on typing
+        searchInput.addEventListener('input', searchMataPelajaran);
+    </script>
 </body>
 
 </html>
